@@ -1,0 +1,11 @@
+<script>
+    const latest = ''
+    const url = new URL(window.location.toString());
+    let path = url.pathname;
+    if (path.endsWith('index.html')) {
+        path = path.substring(0, path.length - 10);
+    }
+    path += latest;
+    url.pathname = path;
+    window.location.replace(url.toString());
+</script>
