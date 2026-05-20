@@ -70,7 +70,9 @@ loadScripts(document, 'script');</script>
 <li><a href="#supportsMultiple()" tabindex="0">supportsMultiple()</a></li>
 <li><a href="#getValue(ch.njol.skript.config.Node)" tabindex="0">getValue(Node)</a></li>
 <li><a href="#canCreateWith(ch.njol.skript.config.Node)" tabindex="0">canCreateWith(Node)</a></li>
+<li><a href="#preWrite(org.skriptlang.skript.docs.DocumentationAdapter)" tabindex="0">preWrite(DocumentationAdapter)</a></li>
 <li><a href="#write(org.skriptlang.skript.docs.DocumentationAdapter)" tabindex="0">write(DocumentationAdapter)</a></li>
+<li><a href="#postWrite(org.skriptlang.skript.docs.DocumentationAdapter)" tabindex="0">postWrite(DocumentationAdapter)</a></li>
 </ol>
 </li>
 </ol>
@@ -174,6 +176,16 @@ Every entry data instance must contain some sort of key. This key is the main id
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isOptional()" class="member-name-link">isOptional</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#postWrite(org.skriptlang.skript.docs.DocumentationAdapter)" class="member-name-link">postWrite</a><wbr>(<a href="../../docs/DocumentationAdapter.html" title="interface in org.skriptlang.skript.docs">DocumentationAdapter</a>&nbsp;adapter)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Called immediately after the <a href="../../docs/Documentable.html#write(org.skriptlang.skript.docs.DocumentationAdapter)"><code>Documentable.write(DocumentationAdapter)</code></a> process.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#preWrite(org.skriptlang.skript.docs.DocumentationAdapter)" class="member-name-link">preWrite</a><wbr>(<a href="../../docs/DocumentationAdapter.html" title="interface in org.skriptlang.skript.docs">DocumentationAdapter</a>&nbsp;adapter)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Called immediately before the <a href="../../docs/Documentable.html#write(org.skriptlang.skript.docs.DocumentationAdapter)"><code>Documentable.write(DocumentationAdapter)</code></a> process.</div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#supportsMultiple()" class="member-name-link">supportsMultiple</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
@@ -190,7 +202,7 @@ Every entry data instance must contain some sort of key. This key is the main id
 <code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Object.html#clone()" title="class or interface in java.lang" class="external-link">clone</a>, <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)" title="class or interface in java.lang" class="external-link">equals</a>, <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Object.html#finalize()" title="class or interface in java.lang" class="external-link">finalize</a>, <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Object.html#getClass()" title="class or interface in java.lang" class="external-link">getClass</a>, <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Object.html#hashCode()" title="class or interface in java.lang" class="external-link">hashCode</a>, <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Object.html#notify()" title="class or interface in java.lang" class="external-link">notify</a>, <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Object.html#notifyAll()" title="class or interface in java.lang" class="external-link">notifyAll</a>, <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Object.html#toString()" title="class or interface in java.lang" class="external-link">toString</a>, <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Object.html#wait()" title="class or interface in java.lang" class="external-link">wait</a>, <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Object.html#wait(long)" title="class or interface in java.lang" class="external-link">wait</a>, <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Object.html#wait(long,int)" title="class or interface in java.lang" class="external-link">wait</a></code></div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-org.skriptlang.skript.docs.Documentable">Methods inherited from interface&nbsp;<a href="../../docs/Documentable.html#method-summary" title="interface in org.skriptlang.skript.docs">Documentable</a></h3>
-<code><a href="../../docs/Documentable.html#canWrite(org.skriptlang.skript.docs.DocumentationAdapter)" title="canWrite(DocumentationAdapter)">canWrite</a>, <a href="../../docs/Documentable.html#postWrite(org.skriptlang.skript.docs.DocumentationAdapter)" title="postWrite(DocumentationAdapter)">postWrite</a>, <a href="../../docs/Documentable.html#preWrite(org.skriptlang.skript.docs.DocumentationAdapter)" title="preWrite(DocumentationAdapter)">preWrite</a></code></div>
+<code><a href="../../docs/Documentable.html#canWrite(org.skriptlang.skript.docs.DocumentationAdapter)" title="canWrite(DocumentationAdapter)">canWrite</a></code></div>
 </section>
 </li>
 </ul>
@@ -316,6 +328,22 @@ Every entry data instance must contain some sort of key. This key is the main id
 </section>
 </li>
 <li>
+<section class="detail" id="preWrite(org.skriptlang.skript.docs.DocumentationAdapter)">
+<h3>preWrite</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">preWrite</span><wbr><span class="parameters">(<a href="../../docs/DocumentationAdapter.html" title="interface in org.skriptlang.skript.docs">DocumentationAdapter</a>&nbsp;adapter)</span></div>
+<div class="block"><span class="description-from-type-label">Description copied from interface:&nbsp;<code><a href="../../docs/Documentable.html#preWrite(org.skriptlang.skript.docs.DocumentationAdapter)">Documentable</a></code></span></div>
+<div class="block">Called immediately before the <a href="../../docs/Documentable.html#write(org.skriptlang.skript.docs.DocumentationAdapter)"><code>Documentable.write(DocumentationAdapter)</code></a> process.</div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="../../docs/Documentable.html#preWrite(org.skriptlang.skript.docs.DocumentationAdapter)">preWrite</a></code>&nbsp;in interface&nbsp;<code><a href="../../docs/Documentable.html" title="interface in org.skriptlang.skript.docs">Documentable</a></code></dd>
+<dt>Parameters:</dt>
+<dd><code>adapter</code> - The adapter to be written to.</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
 <section class="detail" id="write(org.skriptlang.skript.docs.DocumentationAdapter)">
 <h3>write</h3>
 <div class="horizontal-scroll">
@@ -327,6 +355,22 @@ Every entry data instance must contain some sort of key. This key is the main id
 <dd><code><a href="../../docs/Documentable.html#write(org.skriptlang.skript.docs.DocumentationAdapter)">write</a></code>&nbsp;in interface&nbsp;<code><a href="../../docs/Documentable.html" title="interface in org.skriptlang.skript.docs">Documentable</a></code></dd>
 <dt>Parameters:</dt>
 <dd><code>adapter</code> - The adapter to write to.</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="postWrite(org.skriptlang.skript.docs.DocumentationAdapter)">
+<h3>postWrite</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">postWrite</span><wbr><span class="parameters">(<a href="../../docs/DocumentationAdapter.html" title="interface in org.skriptlang.skript.docs">DocumentationAdapter</a>&nbsp;adapter)</span></div>
+<div class="block"><span class="description-from-type-label">Description copied from interface:&nbsp;<code><a href="../../docs/Documentable.html#postWrite(org.skriptlang.skript.docs.DocumentationAdapter)">Documentable</a></code></span></div>
+<div class="block">Called immediately after the <a href="../../docs/Documentable.html#write(org.skriptlang.skript.docs.DocumentationAdapter)"><code>Documentable.write(DocumentationAdapter)</code></a> process.</div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="../../docs/Documentable.html#postWrite(org.skriptlang.skript.docs.DocumentationAdapter)">postWrite</a></code>&nbsp;in interface&nbsp;<code><a href="../../docs/Documentable.html" title="interface in org.skriptlang.skript.docs">Documentable</a></code></dd>
+<dt>Parameters:</dt>
+<dd><code>adapter</code> - The adapter that was written to.</dd>
 </dl>
 </div>
 </section>

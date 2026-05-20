@@ -67,7 +67,9 @@ loadScripts(document, 'script');</script>
 <li><a href="#isSingle()" tabindex="0">isSingle()</a></li>
 <li><a href="#single()" tabindex="0">single()</a></li>
 <li><a href="#toFormattedString()" tabindex="0">toFormattedString()</a></li>
+<li><a href="#preWrite(org.skriptlang.skript.docs.DocumentationAdapter)" tabindex="0">preWrite(DocumentationAdapter)</a></li>
 <li><a href="#write(org.skriptlang.skript.docs.DocumentationAdapter)" tabindex="0">write(DocumentationAdapter)</a></li>
+<li><a href="#postWrite(org.skriptlang.skript.docs.DocumentationAdapter)" tabindex="0">postWrite(DocumentationAdapter)</a></li>
 </ol>
 </li>
 </ol>
@@ -154,6 +156,16 @@ when constructing one using <a href="DefaultFunction.Builder.html#parameter(java
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://www.javadocs.dev/org.jetbrains/annotations/26.0.2/org/jetbrains/annotations/NotNull.html" title="class or interface in org.jetbrains.annotations" class="external-link">@NotNull</a> <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#name()" class="member-name-link">name</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#postWrite(org.skriptlang.skript.docs.DocumentationAdapter)" class="member-name-link">postWrite</a><wbr>(<a href="../../docs/DocumentationAdapter.html" title="interface in org.skriptlang.skript.docs">DocumentationAdapter</a>&nbsp;adapter)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Called immediately after the <a href="../../docs/Documentable.html#write(org.skriptlang.skript.docs.DocumentationAdapter)"><code>Documentable.write(DocumentationAdapter)</code></a> process.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#preWrite(org.skriptlang.skript.docs.DocumentationAdapter)" class="member-name-link">preWrite</a><wbr>(<a href="../../docs/DocumentationAdapter.html" title="interface in org.skriptlang.skript.docs">DocumentationAdapter</a>&nbsp;adapter)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="block">Called immediately before the <a href="../../docs/Documentable.html#write(org.skriptlang.skript.docs.DocumentationAdapter)"><code>Documentable.write(DocumentationAdapter)</code></a> process.</div>
+</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6"><code>default boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6"><code><a href="#single()" class="member-name-link">single</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6">
@@ -177,7 +189,7 @@ when constructing one using <a href="DefaultFunction.Builder.html#parameter(java
 </div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-org.skriptlang.skript.docs.Documentable">Methods inherited from interface&nbsp;<a href="../../docs/Documentable.html#method-summary" title="interface in org.skriptlang.skript.docs">Documentable</a></h3>
-<code><a href="../../docs/Documentable.html#canWrite(org.skriptlang.skript.docs.DocumentationAdapter)" title="canWrite(DocumentationAdapter)">canWrite</a>, <a href="../../docs/Documentable.html#postWrite(org.skriptlang.skript.docs.DocumentationAdapter)" title="postWrite(DocumentationAdapter)">postWrite</a>, <a href="../../docs/Documentable.html#preWrite(org.skriptlang.skript.docs.DocumentationAdapter)" title="preWrite(DocumentationAdapter)">preWrite</a></code></div>
+<code><a href="../../docs/Documentable.html#canWrite(org.skriptlang.skript.docs.DocumentationAdapter)" title="canWrite(DocumentationAdapter)">canWrite</a></code></div>
 </section>
 </li>
 </ul>
@@ -321,6 +333,22 @@ otherwise, the returned array will contain only the values.</p></div>
 </section>
 </li>
 <li>
+<section class="detail" id="preWrite(org.skriptlang.skript.docs.DocumentationAdapter)">
+<h3>preWrite</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">preWrite</span><wbr><span class="parameters">(<a href="../../docs/DocumentationAdapter.html" title="interface in org.skriptlang.skript.docs">DocumentationAdapter</a>&nbsp;adapter)</span></div>
+<div class="block"><span class="description-from-type-label">Description copied from interface:&nbsp;<code><a href="../../docs/Documentable.html#preWrite(org.skriptlang.skript.docs.DocumentationAdapter)">Documentable</a></code></span></div>
+<div class="block">Called immediately before the <a href="../../docs/Documentable.html#write(org.skriptlang.skript.docs.DocumentationAdapter)"><code>Documentable.write(DocumentationAdapter)</code></a> process.</div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="../../docs/Documentable.html#preWrite(org.skriptlang.skript.docs.DocumentationAdapter)">preWrite</a></code>&nbsp;in interface&nbsp;<code><a href="../../docs/Documentable.html" title="interface in org.skriptlang.skript.docs">Documentable</a></code></dd>
+<dt>Parameters:</dt>
+<dd><code>adapter</code> - The adapter to be written to.</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
 <section class="detail" id="write(org.skriptlang.skript.docs.DocumentationAdapter)">
 <h3>write</h3>
 <div class="horizontal-scroll">
@@ -332,6 +360,22 @@ otherwise, the returned array will contain only the values.</p></div>
 <dd><code><a href="../../docs/Documentable.html#write(org.skriptlang.skript.docs.DocumentationAdapter)">write</a></code>&nbsp;in interface&nbsp;<code><a href="../../docs/Documentable.html" title="interface in org.skriptlang.skript.docs">Documentable</a></code></dd>
 <dt>Parameters:</dt>
 <dd><code>adapter</code> - The adapter to write to.</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="postWrite(org.skriptlang.skript.docs.DocumentationAdapter)">
+<h3>postWrite</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">postWrite</span><wbr><span class="parameters">(<a href="../../docs/DocumentationAdapter.html" title="interface in org.skriptlang.skript.docs">DocumentationAdapter</a>&nbsp;adapter)</span></div>
+<div class="block"><span class="description-from-type-label">Description copied from interface:&nbsp;<code><a href="../../docs/Documentable.html#postWrite(org.skriptlang.skript.docs.DocumentationAdapter)">Documentable</a></code></span></div>
+<div class="block">Called immediately after the <a href="../../docs/Documentable.html#write(org.skriptlang.skript.docs.DocumentationAdapter)"><code>Documentable.write(DocumentationAdapter)</code></a> process.</div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="../../docs/Documentable.html#postWrite(org.skriptlang.skript.docs.DocumentationAdapter)">postWrite</a></code>&nbsp;in interface&nbsp;<code><a href="../../docs/Documentable.html" title="interface in org.skriptlang.skript.docs">Documentable</a></code></dd>
+<dt>Parameters:</dt>
+<dd><code>adapter</code> - The adapter that was written to.</dd>
 </dl>
 </div>
 </section>
