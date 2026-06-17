@@ -77,6 +77,7 @@ org.skriptlang.skript.bukkit.particles.particleeffects
 org.skriptlang.skript.bukkit.particles.registration
 org.skriptlang.skript.bukkit.pdc
 org.skriptlang.skript.bukkit.potion
+org.skriptlang.skript.bukkit.potion.providers
 org.skriptlang.skript.bukkit.potion.util
 org.skriptlang.skript.bukkit.registration
 org.skriptlang.skript.bukkit.tags
