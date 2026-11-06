@@ -66,6 +66,7 @@ loadScripts(document, 'script');</script>
 <li><a href="#enterScope(java.lang.String)" tabindex="0">enterScope(String)</a></li>
 <li><a href="#editScope(java.lang.String)" tabindex="0">editScope(String)</a></li>
 <li><a href="#exitScope()" tabindex="0">exitScope()</a></li>
+<li><a href="#deleteScope(java.lang.String)" tabindex="0">deleteScope(String)</a></li>
 <li><a href="#currentScope()" tabindex="0">currentScope()</a></li>
 <li><a href="#dataMap()" tabindex="0">dataMap()</a></li>
 <li><a href="#reference(org.skriptlang.skript.docs.Documentable)" tabindex="0">reference(Documentable)</a></li>
@@ -134,45 +135,50 @@ It collects this information into a tree-like format that can then be output int
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#dataMap()" class="member-name-link">dataMap</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#editScope(java.lang.String)" class="member-name-link">editScope</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;key)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#deleteScope(java.lang.String)" class="member-name-link">deleteScope</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;key)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Enters an existing scope.</div>
+<div class="block">Deletes a scope present at the current level.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#enterScope(java.lang.String)" class="member-name-link">enterScope</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;key)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#editScope(java.lang.String)" class="member-name-link">editScope</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;key)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
-<div class="block">Enters a new scope, which represents a new level of information.</div>
+<div class="block">Enters an existing scope present at the current level.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#exitScope()" class="member-name-link">exitScope</a>()</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#enterScope(java.lang.String)" class="member-name-link">enterScope</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;key)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Enters a new scope, which represents a new level of information.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#exitScope()" class="member-name-link">exitScope</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Exits the last entered scope.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static <a href="DocumentationAdapter.html" title="interface in org.skriptlang.skript.docs">DocumentationAdapter</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#of(org.skriptlang.skript.addon.SkriptAddon)" class="member-name-link">of</a><wbr>(<a href="../addon/SkriptAddon.html" title="interface in org.skriptlang.skript.addon">SkriptAddon</a>&nbsp;addon)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1">
-<div class="block">Creates and populates an adapter with documentation for elements provided by <code>addon</code>.</div>
-</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1"><code>static <a href="DocumentationAdapter.html" title="interface in org.skriptlang.skript.docs">DocumentationAdapter</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1"><code><a href="#of(org.skriptlang.skript.addon.SkriptAddon,java.util.function.BiConsumer)" class="member-name-link">of</a><wbr>(<a href="../addon/SkriptAddon.html" title="interface in org.skriptlang.skript.addon">SkriptAddon</a>&nbsp;addon,
- <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/function/BiConsumer.html" title="class or interface in java.util.function" class="external-link">BiConsumer</a>&lt;<a href="DocumentationAdapter.html" title="interface in org.skriptlang.skript.docs">DocumentationAdapter</a>, <a href="Documentable.html" title="interface in org.skriptlang.skript.docs">Documentable</a>&gt;&nbsp;writeHandler)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1"><code><a href="#of(org.skriptlang.skript.addon.SkriptAddon)" class="member-name-link">of</a><wbr>(<a href="../addon/SkriptAddon.html" title="interface in org.skriptlang.skript.addon">SkriptAddon</a>&nbsp;addon)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1">
 <div class="block">Creates and populates an adapter with documentation for elements provided by <code>addon</code>.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="DocumentationAdapter.Reference.html" title="interface in org.skriptlang.skript.docs">DocumentationAdapter.Reference</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#reference(org.skriptlang.skript.docs.Documentable)" class="member-name-link">reference</a><wbr>(<a href="Documentable.html" title="interface in org.skriptlang.skript.docs">Documentable</a>&nbsp;documentable)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static <a href="DocumentationAdapter.html" title="interface in org.skriptlang.skript.docs">DocumentationAdapter</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#of(org.skriptlang.skript.addon.SkriptAddon,java.util.function.BiConsumer)" class="member-name-link">of</a><wbr>(<a href="../addon/SkriptAddon.html" title="interface in org.skriptlang.skript.addon">SkriptAddon</a>&nbsp;addon,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/function/BiConsumer.html" title="class or interface in java.util.function" class="external-link">BiConsumer</a>&lt;<a href="DocumentationAdapter.html" title="interface in org.skriptlang.skript.docs">DocumentationAdapter</a>, <a href="Documentable.html" title="interface in org.skriptlang.skript.docs">Documentable</a>&gt;&nbsp;writeHandler)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1">
+<div class="block">Creates and populates an adapter with documentation for elements provided by <code>addon</code>.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="DocumentationAdapter.Reference.html" title="interface in org.skriptlang.skript.docs">DocumentationAdapter.Reference</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#reference(org.skriptlang.skript.docs.Documentable)" class="member-name-link">reference</a><wbr>(<a href="Documentable.html" title="interface in org.skriptlang.skript.docs">Documentable</a>&nbsp;documentable)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Creates a new reference to a documentable.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#write(java.lang.String,java.lang.Object)" class="member-name-link">write</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;key,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#write(java.lang.String,java.lang.Object)" class="member-name-link">write</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;key,
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Object.html" title="class or interface in java.lang" class="external-link">Object</a>&nbsp;value)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Writes a new entry to this adapter.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#write(org.skriptlang.skript.docs.Documentable)" class="member-name-link">write</a><wbr>(<a href="Documentable.html" title="interface in org.skriptlang.skript.docs">Documentable</a>&nbsp;documentable)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#write(org.skriptlang.skript.docs.Documentable)" class="member-name-link">write</a><wbr>(<a href="Documentable.html" title="interface in org.skriptlang.skript.docs">Documentable</a>&nbsp;documentable)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Writes a documentable to this adapter.</div>
 </div>
 </div>
@@ -282,10 +288,20 @@ This default implementation covers:
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">enterScope</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;key)</span></div>
 <div class="block">Enters a new scope, which represents a new level of information.
 For example, all <a href="../registration/DefaultSyntaxInfos.Expression.html" title="interface in org.skriptlang.skript.registration"><code>DefaultSyntaxInfos.Expression</code></a>s may be represented within a scope,
- and each individual Expression within a scope.</div>
+ and each individual Expression within a scope.
+This method does not guarantee that key of the entered scope will match <code>key</code>.
+That is, if a scope under the key <code>key</code> already exists, the newly entered scope may have its key
+only derived from <code>key</code> to avoid conflicts.
+If it is necessary to enter an existing scope, use <a href="#editScope(java.lang.String)"><code>editScope(String)</code></a>.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>key</code> - The name of the scope to enter.</dd>
+<dt>See Also:</dt>
+<dd>
+<ul class="tag-list">
+<li><a href="#exitScope()"><code>exitScope()</code></a></li>
+</ul>
+</dd>
 </dl>
 </div>
 </section>
@@ -295,10 +311,18 @@ For example, all <a href="../registration/DefaultSyntaxInfos.Expression.html" ti
 <h3>editScope</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">editScope</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;key)</span></div>
-<div class="block">Enters an existing scope.</div>
+<div class="block">Enters an existing scope present at the current level.
+This method should be preferred for cases where a guarantee that <code>key</code> is equal to
+ the key of the entered scope is required.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>key</code> - The name of the scope to edit.</dd>
+<dt>See Also:</dt>
+<dd>
+<ul class="tag-list">
+<li><a href="#enterScope(java.lang.String)"><code>enterScope(String)</code></a></li>
+</ul>
+</dd>
 </dl>
 </div>
 </section>
@@ -310,6 +334,19 @@ For example, all <a href="../registration/DefaultSyntaxInfos.Expression.html" ti
 <div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">exitScope</span>()</div>
 <div class="block">Exits the last entered scope.
 Must follow a <a href="#enterScope(java.lang.String)"><code>enterScope(String)</code></a> call.</div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="deleteScope(java.lang.String)">
+<h3>deleteScope</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="return-type">void</span>&nbsp;<span class="element-name">deleteScope</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;key)</span></div>
+<div class="block">Deletes a scope present at the current level.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>key</code> - The name of the scope to delete.</dd>
+</dl>
 </div>
 </section>
 </li>

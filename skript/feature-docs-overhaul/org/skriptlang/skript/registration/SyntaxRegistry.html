@@ -72,14 +72,14 @@ loadScripts(document, 'script');</script>
 <li><a href="#empty()" tabindex="0">empty()</a></li>
 <li><a href="#withOrigin(org.skriptlang.skript.registration.SyntaxRegistry,org.skriptlang.skript.docs.Origin)" tabindex="0">withOrigin(SyntaxRegistry, Origin)</a></li>
 <li><a href="#withOrigin(org.skriptlang.skript.registration.SyntaxRegistry,java.util.function.Function)" tabindex="0">withOrigin(SyntaxRegistry, Function)</a></li>
-<li><a href="#syntaxes(org.skriptlang.skript.registration.SyntaxRegistry.Key)" tabindex="0">syntaxes(SyntaxRegistry.Key)</a></li>
 <li><a href="#register(org.skriptlang.skript.registration.SyntaxRegistry.Key,I)" tabindex="0">register(SyntaxRegistry.Key, I)</a></li>
 <li><a href="#unregister(org.skriptlang.skript.registration.SyntaxInfo)" tabindex="0">unregister(SyntaxInfo)</a></li>
 <li><a href="#unregister(org.skriptlang.skript.registration.SyntaxRegistry.Key,I)" tabindex="0">unregister(SyntaxRegistry.Key, I)</a></li>
-<li><a href="#unmodifiableView()" tabindex="0">unmodifiableView()</a></li>
+<li><a href="#syntaxes(org.skriptlang.skript.registration.SyntaxRegistry.Key)" tabindex="0">syntaxes(SyntaxRegistry.Key)</a></li>
 <li><a href="#elements()" tabindex="0">elements()</a></li>
+<li><a href="#keys()" tabindex="0">keys()</a></li>
+<li><a href="#unmodifiableView()" tabindex="0">unmodifiableView()</a></li>
 <li><a href="#write(org.skriptlang.skript.docs.DocumentationAdapter)" tabindex="0">write(DocumentationAdapter)</a></li>
-<li><a href="#write(org.skriptlang.skript.docs.DocumentationAdapter,java.lang.Iterable)" tabindex="0">write(DocumentationAdapter, Iterable)</a></li>
 </ol>
 </li>
 </ol>
@@ -189,57 +189,56 @@ There are no guarantees on the ordering of the returned collection.</div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1">
 <div class="block">Constructs a default implementation of a syntax registry.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;I extends <a href="SyntaxInfo.html" title="interface in org.skriptlang.skript.registration">SyntaxInfo</a>&lt;?&gt;&gt;<br>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#register(org.skriptlang.skript.registration.SyntaxRegistry.Key,I)" class="member-name-link">register</a><wbr>(<a href="SyntaxRegistry.Key.html" title="interface in org.skriptlang.skript.registration">SyntaxRegistry.Key</a>&lt;I&gt;&nbsp;key,
- I&nbsp;info)</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://www.javadocs.dev/org.jetbrains/annotations/26.0.2/org/jetbrains/annotations/Unmodifiable.html" title="class or interface in org.jetbrains.annotations" class="external-link">@Unmodifiable</a> <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;<a href="SyntaxRegistry.Key.html" title="interface in org.skriptlang.skript.registration">SyntaxRegistry.Key</a>&lt;?&gt;&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#keys()" class="member-name-link">keys</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">A method to obtain all keys used to register syntax.</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;I extends <a href="SyntaxInfo.html" title="interface in org.skriptlang.skript.registration">SyntaxInfo</a>&lt;?&gt;&gt;<br>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#register(org.skriptlang.skript.registration.SyntaxRegistry.Key,I)" class="member-name-link">register</a><wbr>(<a href="SyntaxRegistry.Key.html" title="interface in org.skriptlang.skript.registration">SyntaxRegistry.Key</a>&lt;I&gt;&nbsp;key,
+ I&nbsp;info)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Registers a new syntax under a provided key.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;I extends <a href="SyntaxInfo.html" title="interface in org.skriptlang.skript.registration">SyntaxInfo</a>&lt;?&gt;&gt;<br><a href="https://www.javadocs.dev/org.jetbrains/annotations/26.0.2/org/jetbrains/annotations/Unmodifiable.html" title="class or interface in org.jetbrains.annotations" class="external-link">@Unmodifiable</a> <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;I&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#syntaxes(org.skriptlang.skript.registration.SyntaxRegistry.Key)" class="member-name-link">syntaxes</a><wbr>(<a href="SyntaxRegistry.Key.html" title="interface in org.skriptlang.skript.registration">SyntaxRegistry.Key</a>&lt;I&gt;&nbsp;key)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;I extends <a href="SyntaxInfo.html" title="interface in org.skriptlang.skript.registration">SyntaxInfo</a>&lt;?&gt;&gt;<br><a href="https://www.javadocs.dev/org.jetbrains/annotations/26.0.2/org/jetbrains/annotations/Unmodifiable.html" title="class or interface in org.jetbrains.annotations" class="external-link">@Unmodifiable</a> <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;I&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#syntaxes(org.skriptlang.skript.registration.SyntaxRegistry.Key)" class="member-name-link">syntaxes</a><wbr>(<a href="SyntaxRegistry.Key.html" title="interface in org.skriptlang.skript.registration">SyntaxRegistry.Key</a>&lt;I&gt;&nbsp;key)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">A method to obtain all syntaxes registered under a certain key.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="SyntaxRegistry.html" title="interface in org.skriptlang.skript.registration">SyntaxRegistry</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#unmodifiableView()" class="member-name-link">unmodifiableView</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="SyntaxRegistry.html" title="interface in org.skriptlang.skript.registration">SyntaxRegistry</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#unmodifiableView()" class="member-name-link">unmodifiableView</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Constructs an unmodifiable view of this syntax registry.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#unregister(org.skriptlang.skript.registration.SyntaxInfo)" class="member-name-link">unregister</a><wbr>(<a href="SyntaxInfo.html" title="interface in org.skriptlang.skript.registration">SyntaxInfo</a>&lt;?&gt;&nbsp;info)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#unregister(org.skriptlang.skript.registration.SyntaxInfo)" class="member-name-link">unregister</a><wbr>(<a href="SyntaxInfo.html" title="interface in org.skriptlang.skript.registration">SyntaxInfo</a>&lt;?&gt;&nbsp;info)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Unregisters all registrations of a syntax, regardless of the <a href="SyntaxRegistry.Key.html" title="interface in org.skriptlang.skript.registration"><code>SyntaxRegistry.Key</code></a>.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;I extends <a href="SyntaxInfo.html" title="interface in org.skriptlang.skript.registration">SyntaxInfo</a>&lt;?&gt;&gt;<br>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#unregister(org.skriptlang.skript.registration.SyntaxRegistry.Key,I)" class="member-name-link">unregister</a><wbr>(<a href="SyntaxRegistry.Key.html" title="interface in org.skriptlang.skript.registration">SyntaxRegistry.Key</a>&lt;I&gt;&nbsp;key,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;I extends <a href="SyntaxInfo.html" title="interface in org.skriptlang.skript.registration">SyntaxInfo</a>&lt;?&gt;&gt;<br>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#unregister(org.skriptlang.skript.registration.SyntaxRegistry.Key,I)" class="member-name-link">unregister</a><wbr>(<a href="SyntaxRegistry.Key.html" title="interface in org.skriptlang.skript.registration">SyntaxRegistry.Key</a>&lt;I&gt;&nbsp;key,
  I&nbsp;info)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Unregisters a syntax registered under a provided key.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1"><code>static <a href="SyntaxRegistry.html" title="interface in org.skriptlang.skript.registration">SyntaxRegistry</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1"><code><a href="#withOrigin(org.skriptlang.skript.registration.SyntaxRegistry,java.util.function.Function)" class="member-name-link">withOrigin</a><wbr>(<a href="SyntaxRegistry.html" title="interface in org.skriptlang.skript.registration">SyntaxRegistry</a>&nbsp;syntaxRegistry,
- <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/function/Function.html" title="class or interface in java.util.function" class="external-link">Function</a>&lt;<a href="SyntaxInfo.html" title="interface in org.skriptlang.skript.registration">SyntaxInfo</a>&lt;?&gt;, <a href="../docs/Origin.html" title="interface in org.skriptlang.skript.docs">Origin</a>&gt;&nbsp;originFactory)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1">
-<div class="block">Constructs a syntax registry that applies an origin to all syntax infos registered through it
- with the <a href="../docs/Origin.html#UNKNOWN"><code>Origin.UNKNOWN</code></a> origin.</div>
-</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static <a href="SyntaxRegistry.html" title="interface in org.skriptlang.skript.registration">SyntaxRegistry</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#withOrigin(org.skriptlang.skript.registration.SyntaxRegistry,org.skriptlang.skript.docs.Origin)" class="member-name-link">withOrigin</a><wbr>(<a href="SyntaxRegistry.html" title="interface in org.skriptlang.skript.registration">SyntaxRegistry</a>&nbsp;syntaxRegistry,
- <a href="../docs/Origin.html" title="interface in org.skriptlang.skript.docs">Origin</a>&nbsp;origin)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#withOrigin(org.skriptlang.skript.registration.SyntaxRegistry,java.util.function.Function)" class="member-name-link">withOrigin</a><wbr>(<a href="SyntaxRegistry.html" title="interface in org.skriptlang.skript.registration">SyntaxRegistry</a>&nbsp;syntaxRegistry,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/function/Function.html" title="class or interface in java.util.function" class="external-link">Function</a>&lt;<a href="SyntaxInfo.html" title="interface in org.skriptlang.skript.registration">SyntaxInfo</a>&lt;?&gt;, <a href="../docs/Origin.html" title="interface in org.skriptlang.skript.docs">Origin</a>&gt;&nbsp;originFactory)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1">
 <div class="block">Constructs a syntax registry that applies an origin to all syntax infos registered through it
  with the <a href="../docs/Origin.html#UNKNOWN"><code>Origin.UNKNOWN</code></a> origin.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#write(org.skriptlang.skript.docs.DocumentationAdapter)" class="member-name-link">write</a><wbr>(<a href="../docs/DocumentationAdapter.html" title="interface in org.skriptlang.skript.docs">DocumentationAdapter</a>&nbsp;adapter)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
-<div class="block">Writes information about this object to an adapter.</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1"><code>static <a href="SyntaxRegistry.html" title="interface in org.skriptlang.skript.registration">SyntaxRegistry</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1"><code><a href="#withOrigin(org.skriptlang.skript.registration.SyntaxRegistry,org.skriptlang.skript.docs.Origin)" class="member-name-link">withOrigin</a><wbr>(<a href="SyntaxRegistry.html" title="interface in org.skriptlang.skript.registration">SyntaxRegistry</a>&nbsp;syntaxRegistry,
+ <a href="../docs/Origin.html" title="interface in org.skriptlang.skript.docs">Origin</a>&nbsp;origin)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1">
+<div class="block">Constructs a syntax registry that applies an origin to all syntax infos registered through it
+ with the <a href="../docs/Origin.html#UNKNOWN"><code>Origin.UNKNOWN</code></a> origin.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#write(org.skriptlang.skript.docs.DocumentationAdapter,java.lang.Iterable)" class="member-name-link">write</a><wbr>(<a href="../docs/DocumentationAdapter.html" title="interface in org.skriptlang.skript.docs">DocumentationAdapter</a>&nbsp;adapter,
- <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Iterable.html" title="class or interface in java.lang" class="external-link">Iterable</a>&lt;<a href="SyntaxRegistry.Key.html" title="interface in org.skriptlang.skript.registration">SyntaxRegistry.Key</a>&lt;?&gt;&gt;&nbsp;keys)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#write(org.skriptlang.skript.docs.DocumentationAdapter)" class="member-name-link">write</a><wbr>(<a href="../docs/DocumentationAdapter.html" title="interface in org.skriptlang.skript.docs">DocumentationAdapter</a>&nbsp;adapter)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
-<div class="block">Like <a href="#write(org.skriptlang.skript.docs.DocumentationAdapter)"><code>write(DocumentationAdapter)</code></a>, but only writes specific keys.</div>
+<div class="block">Writes information about this object to an adapter.</div>
 </div>
 </div>
 </div>
@@ -379,24 +378,6 @@ This implementation is practically a wrapper around <code>Map&lt;Key&lt;?&gt;, S
 </section>
 </li>
 <li>
-<section class="detail" id="syntaxes(org.skriptlang.skript.registration.SyntaxRegistry.Key)">
-<h3>syntaxes</h3>
-<div class="horizontal-scroll">
-<div class="member-signature"><span class="type-parameters">&lt;I extends <a href="SyntaxInfo.html" title="interface in org.skriptlang.skript.registration">SyntaxInfo</a>&lt;?&gt;&gt;</span>
-<span class="return-type"><a href="https://www.javadocs.dev/org.jetbrains/annotations/26.0.2/org/jetbrains/annotations/Unmodifiable.html" title="class or interface in org.jetbrains.annotations" class="external-link">@Unmodifiable</a> <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;I&gt;</span>&nbsp;<span class="element-name">syntaxes</span><wbr><span class="parameters">(<a href="SyntaxRegistry.Key.html" title="interface in org.skriptlang.skript.registration">SyntaxRegistry.Key</a>&lt;I&gt;&nbsp;key)</span></div>
-<div class="block">A method to obtain all syntaxes registered under a certain key.</div>
-<dl class="notes">
-<dt>Type Parameters:</dt>
-<dd><span id="syntaxes(org.skriptlang.skript.registration.SyntaxRegistry.Key)-type-param-I"><code>I</code> - The syntax type.</span></dd>
-<dt>Parameters:</dt>
-<dd><code>key</code> - The key to obtain syntaxes from.</dd>
-<dt>Returns:</dt>
-<dd>An unmodifiable snapshot of all syntaxes registered under <code>key</code>.</dd>
-</dl>
-</div>
-</section>
-</li>
-<li>
 <section class="detail" id="register(org.skriptlang.skript.registration.SyntaxRegistry.Key,I)">
 <h3 id="register(org.skriptlang.skript.registration.SyntaxRegistry.Key,org.skriptlang.skript.registration.SyntaxInfo)">register</h3>
 <div class="horizontal-scroll">
@@ -456,18 +437,19 @@ This implementation is practically a wrapper around <code>Map&lt;Key&lt;?&gt;, S
 </section>
 </li>
 <li>
-<section class="detail" id="unmodifiableView()">
-<h3>unmodifiableView</h3>
+<section class="detail" id="syntaxes(org.skriptlang.skript.registration.SyntaxRegistry.Key)">
+<h3>syntaxes</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="annotations"><a href="https://www.javadocs.dev/org.jetbrains/annotations/26.0.2/org/jetbrains/annotations/Contract.html" title="class or interface in org.jetbrains.annotations" class="external-link">@Contract</a>("-&gt; new")
-</span><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="SyntaxRegistry.html" title="interface in org.skriptlang.skript.registration">SyntaxRegistry</a></span>&nbsp;<span class="element-name">unmodifiableView</span>()</div>
-<div class="block">Constructs an unmodifiable view of this syntax registry.
-That is, the returned registry will not allow registrations.</div>
+<div class="member-signature"><span class="type-parameters">&lt;I extends <a href="SyntaxInfo.html" title="interface in org.skriptlang.skript.registration">SyntaxInfo</a>&lt;?&gt;&gt;</span>
+<span class="return-type"><a href="https://www.javadocs.dev/org.jetbrains/annotations/26.0.2/org/jetbrains/annotations/Unmodifiable.html" title="class or interface in org.jetbrains.annotations" class="external-link">@Unmodifiable</a> <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;I&gt;</span>&nbsp;<span class="element-name">syntaxes</span><wbr><span class="parameters">(<a href="SyntaxRegistry.Key.html" title="interface in org.skriptlang.skript.registration">SyntaxRegistry.Key</a>&lt;I&gt;&nbsp;key)</span></div>
+<div class="block">A method to obtain all syntaxes registered under a certain key.</div>
 <dl class="notes">
-<dt>Specified by:</dt>
-<dd><code><a href="../util/ViewProvider.html#unmodifiableView()">unmodifiableView</a></code>&nbsp;in interface&nbsp;<code><a href="../util/ViewProvider.html" title="interface in org.skriptlang.skript.util">ViewProvider</a>&lt;<a href="SyntaxRegistry.html" title="interface in org.skriptlang.skript.registration">SyntaxRegistry</a>&gt;</code></dd>
+<dt>Type Parameters:</dt>
+<dd><span id="syntaxes(org.skriptlang.skript.registration.SyntaxRegistry.Key)-type-param-I"><code>I</code> - The syntax type.</span></dd>
+<dt>Parameters:</dt>
+<dd><code>key</code> - The key to obtain syntaxes from.</dd>
 <dt>Returns:</dt>
-<dd>An unmodifiable view of this syntax registry.</dd>
+<dd>An unmodifiable snapshot of all syntaxes registered under <code>key</code>.</dd>
 </dl>
 </div>
 </section>
@@ -489,6 +471,37 @@ There are no guarantees on the ordering of the returned collection.</div>
 </section>
 </li>
 <li>
+<section class="detail" id="keys()">
+<h3>keys</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="return-type"><a href="https://www.javadocs.dev/org.jetbrains/annotations/26.0.2/org/jetbrains/annotations/Unmodifiable.html" title="class or interface in org.jetbrains.annotations" class="external-link">@Unmodifiable</a> <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a>&lt;<a href="SyntaxRegistry.Key.html" title="interface in org.skriptlang.skript.registration">SyntaxRegistry.Key</a>&lt;?&gt;&gt;</span>&nbsp;<span class="element-name">keys</span>()</div>
+<div class="block">A method to obtain all keys used to register syntax.
+There are no guarantees on the ordering of the returned collection.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>An unmodifiable snapshot of all keys registered.</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="unmodifiableView()">
+<h3>unmodifiableView</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="annotations"><a href="https://www.javadocs.dev/org.jetbrains/annotations/26.0.2/org/jetbrains/annotations/Contract.html" title="class or interface in org.jetbrains.annotations" class="external-link">@Contract</a>("-&gt; new")
+</span><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="SyntaxRegistry.html" title="interface in org.skriptlang.skript.registration">SyntaxRegistry</a></span>&nbsp;<span class="element-name">unmodifiableView</span>()</div>
+<div class="block">Constructs an unmodifiable view of this syntax registry.
+That is, the returned registry will not allow registrations.</div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="../util/ViewProvider.html#unmodifiableView()">unmodifiableView</a></code>&nbsp;in interface&nbsp;<code><a href="../util/ViewProvider.html" title="interface in org.skriptlang.skript.util">ViewProvider</a>&lt;<a href="SyntaxRegistry.html" title="interface in org.skriptlang.skript.registration">SyntaxRegistry</a>&gt;</code></dd>
+<dt>Returns:</dt>
+<dd>An unmodifiable view of this syntax registry.</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
 <section class="detail" id="write(org.skriptlang.skript.docs.DocumentationAdapter)">
 <h3>write</h3>
 <div class="horizontal-scroll">
@@ -500,21 +513,6 @@ There are no guarantees on the ordering of the returned collection.</div>
 <dd><code><a href="../docs/Documentable.html#write(org.skriptlang.skript.docs.DocumentationAdapter)">write</a></code>&nbsp;in interface&nbsp;<code><a href="../docs/Documentable.html" title="interface in org.skriptlang.skript.docs">Documentable</a></code></dd>
 <dt>Parameters:</dt>
 <dd><code>adapter</code> - The adapter to write to.</dd>
-</dl>
-</div>
-</section>
-</li>
-<li>
-<section class="detail" id="write(org.skriptlang.skript.docs.DocumentationAdapter,java.lang.Iterable)">
-<h3>write</h3>
-<div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">write</span><wbr><span class="parameters">(<a href="../docs/DocumentationAdapter.html" title="interface in org.skriptlang.skript.docs">DocumentationAdapter</a>&nbsp;adapter,
- <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Iterable.html" title="class or interface in java.lang" class="external-link">Iterable</a>&lt;<a href="SyntaxRegistry.Key.html" title="interface in org.skriptlang.skript.registration">SyntaxRegistry.Key</a>&lt;?&gt;&gt;&nbsp;keys)</span></div>
-<div class="block">Like <a href="#write(org.skriptlang.skript.docs.DocumentationAdapter)"><code>write(DocumentationAdapter)</code></a>, but only writes specific keys.</div>
-<dl class="notes">
-<dt>Parameters:</dt>
-<dd><code>adapter</code> - The adapter to write to.</dd>
-<dd><code>keys</code> - The specific keys to write</dd>
 </dl>
 </div>
 </section>

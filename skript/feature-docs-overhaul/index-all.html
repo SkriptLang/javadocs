@@ -1668,6 +1668,16 @@ supports Spigot API.</div>
 <dd>&nbsp;</dd>
 <dt><a href="ch/njol/skript/classes/data/BukkitClasses.html#%3Cinit%3E()" class="member-name-link">BukkitClasses()</a> - Constructor for class ch.njol.skript.classes.data.<a href="ch/njol/skript/classes/data/BukkitClasses.html" title="class in ch.njol.skript.classes.data">BukkitClasses</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="org/skriptlang/skript/bukkit/docs/BukkitDocumentationAdapter.html" class="type-name-link" title="class in org.skriptlang.skript.bukkit.docs">BukkitDocumentationAdapter</a> - Class in <a href="org/skriptlang/skript/bukkit/docs/package-summary.html">org.skriptlang.skript.bukkit.docs</a></dt>
+<dd>
+<div class="block">An extended implementation of <a href="org/skriptlang/skript/docs/DocumentationAdapter.html#of(org.skriptlang.skript.addon.SkriptAddon)"><code>DocumentationAdapter.of(SkriptAddon)</code></a> that also covers:
+
+    <a href="ch/njol/skript/lang/EventRestrictedSyntax.html" title="interface in ch.njol.skript.lang"><code>EventRestrictedSyntax</code></a>s
+    Includes plugin version of plugin representing <code>addon</code> in "source" scope
+</div>
+</dd>
+<dt><a href="org/skriptlang/skript/bukkit/docs/BukkitDocumentationAdapter.html#%3Cinit%3E()" class="member-name-link">BukkitDocumentationAdapter()</a> - Constructor for class org.skriptlang.skript.bukkit.docs.<a href="org/skriptlang/skript/bukkit/docs/BukkitDocumentationAdapter.html" title="class in org.skriptlang.skript.bukkit.docs">BukkitDocumentationAdapter</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="ch/njol/skript/classes/data/BukkitEventValues.html" class="type-name-link" title="class in ch.njol.skript.classes.data">BukkitEventValues</a> - Class in <a href="ch/njol/skript/classes/data/package-summary.html">ch.njol.skript.classes.data</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="ch/njol/skript/classes/data/BukkitEventValues.html#%3Cinit%3E()" class="member-name-link">BukkitEventValues()</a> - Constructor for class ch.njol.skript.classes.data.<a href="ch/njol/skript/classes/data/BukkitEventValues.html" title="class in ch.njol.skript.classes.data">BukkitEventValues</a></dt>
@@ -4298,6 +4308,10 @@ depending on which constructor is used.</div>
 <div class="deprecation-comment">Use <a href="ch/njol/skript/lang/parser/ParserInstance.html#setCurrentStructure(org.skriptlang.skript.lang.structure.Structure)"><code>ParserInstance.setCurrentStructure(Structure)</code></a> with 'null' instead.</div>
 </div>
 </dd>
+<dt><a href="org/skriptlang/skript/docs/DocumentationAdapter.html#deleteScope(java.lang.String)" class="member-name-link">deleteScope(String)</a> - Method in interface org.skriptlang.skript.docs.<a href="org/skriptlang/skript/docs/DocumentationAdapter.html" title="interface in org.skriptlang.skript.docs">DocumentationAdapter</a></dt>
+<dd>
+<div class="block">Deletes a scope present at the current level.</div>
+</dd>
 <dt><a href="ch/njol/skript/variables/Variables.html#deleteVariable(java.lang.String,org.bukkit.event.Event,boolean)" class="member-name-link">deleteVariable(String, Event, boolean)</a> - Static method in class ch.njol.skript.variables.<a href="ch/njol/skript/variables/Variables.html" title="class in ch.njol.skript.variables">Variables</a></dt>
 <dd>
 <div class="block">Deletes a variable.</div>
@@ -4896,7 +4910,7 @@ ex.</div>
 </dd>
 <dt><a href="org/skriptlang/skript/docs/DocumentationAdapter.html#editScope(java.lang.String)" class="member-name-link">editScope(String)</a> - Method in interface org.skriptlang.skript.docs.<a href="org/skriptlang/skript/docs/DocumentationAdapter.html" title="interface in org.skriptlang.skript.docs">DocumentationAdapter</a></dt>
 <dd>
-<div class="block">Enters an existing scope.</div>
+<div class="block">Enters an existing scope present at the current level.</div>
 </dd>
 <dt><a href="org/skriptlang/skript/bukkit/particles/registration/EffectInfo.html#effect()" class="member-name-link">effect()</a> - Method in record class org.skriptlang.skript.bukkit.particles.registration.<a href="org/skriptlang/skript/bukkit/particles/registration/EffectInfo.html" title="class in org.skriptlang.skript.bukkit.particles.registration">EffectInfo</a></dt>
 <dd>
@@ -13747,6 +13761,10 @@ during the <a href="ch/njol/skript/classes/Changer.ChangeMode.html#SET"><code>Ch
 <dd>
 <div class="block">Returns the value of the <a href="./ch/njol/skript/lang/KeyedValue.UnzippedKeyValues.html#param-keys"><code>keys</code></a> record component.</div>
 </dd>
+<dt><a href="org/skriptlang/skript/registration/SyntaxRegistry.html#keys()" class="member-name-link">keys()</a> - Method in interface org.skriptlang.skript.registration.<a href="org/skriptlang/skript/registration/SyntaxRegistry.html" title="interface in org.skriptlang.skript.registration">SyntaxRegistry</a></dt>
+<dd>
+<div class="block">A method to obtain all keys used to register syntax.</div>
+</dd>
 <dt><a href="ch/njol/util/coll/BidiHashMap.html#keySet()" class="member-name-link">keySet()</a> - Method in class ch.njol.util.coll.<a href="ch/njol/util/coll/BidiHashMap.html" title="class in ch.njol.util.coll">BidiHashMap</a></dt>
 <dd>
 <div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
@@ -15943,6 +15961,10 @@ documentation about it cause warnings.</div>
 <div class="deprecation-block"><span class="deprecated-label">Deprecated.</span></div>
 <div class="block">Creates a <a href="ch/njol/skript/doc/JSONGenerator.html" title="class in ch.njol.skript.doc"><code>JSONGenerator</code></a> for the specified source.</div>
 </dd>
+<dt><a href="org/skriptlang/skript/bukkit/docs/BukkitDocumentationAdapter.html#of(org.skriptlang.skript.addon.SkriptAddon)" class="member-name-link">of(SkriptAddon)</a> - Static method in class org.skriptlang.skript.bukkit.docs.<a href="org/skriptlang/skript/bukkit/docs/BukkitDocumentationAdapter.html" title="class in org.skriptlang.skript.bukkit.docs">BukkitDocumentationAdapter</a></dt>
+<dd>
+<div class="block">Creates and populates an adapter with documentation for elements provided by <code>addon</code>.</div>
+</dd>
 <dt><a href="org/skriptlang/skript/docs/DocumentationAdapter.html#of(org.skriptlang.skript.addon.SkriptAddon)" class="member-name-link">of(SkriptAddon)</a> - Static method in interface org.skriptlang.skript.docs.<a href="org/skriptlang/skript/docs/DocumentationAdapter.html" title="interface in org.skriptlang.skript.docs">DocumentationAdapter</a></dt>
 <dd>
 <div class="block">Creates and populates an adapter with documentation for elements provided by <code>addon</code>.</div>
@@ -15956,6 +15978,10 @@ documentation about it cause warnings.</div>
 <dt><a href="org/skriptlang/skript/docs/Origin.html#of(org.skriptlang.skript.addon.SkriptAddon,java.lang.Class)" class="member-name-link">of(SkriptAddon, Class)</a> - Static method in interface org.skriptlang.skript.docs.<a href="org/skriptlang/skript/docs/Origin.html" title="interface in org.skriptlang.skript.docs">Origin</a></dt>
 <dd>
 <div class="block">Constructs an origin from an addon and a class.</div>
+</dd>
+<dt><a href="org/skriptlang/skript/bukkit/docs/BukkitDocumentationAdapter.html#of(org.skriptlang.skript.addon.SkriptAddon,java.util.function.BiConsumer)" class="member-name-link">of(SkriptAddon, BiConsumer)</a> - Static method in class org.skriptlang.skript.bukkit.docs.<a href="org/skriptlang/skript/bukkit/docs/BukkitDocumentationAdapter.html" title="class in org.skriptlang.skript.bukkit.docs">BukkitDocumentationAdapter</a></dt>
+<dd>
+<div class="block">Creates and populates an adapter with documentation for elements provided by <code>addon</code>.</div>
 </dd>
 <dt><a href="org/skriptlang/skript/docs/DocumentationAdapter.html#of(org.skriptlang.skript.addon.SkriptAddon,java.util.function.BiConsumer)" class="member-name-link">of(SkriptAddon, BiConsumer)</a> - Static method in interface org.skriptlang.skript.docs.<a href="org/skriptlang/skript/docs/DocumentationAdapter.html" title="interface in org.skriptlang.skript.docs">DocumentationAdapter</a></dt>
 <dd>
@@ -24709,10 +24735,6 @@ with as much derivable context as possible</div>
 <dd>&nbsp;</dd>
 <dt><a href="org/skriptlang/skript/registration/SyntaxRegistry.html#write(org.skriptlang.skript.docs.DocumentationAdapter)" class="member-name-link">write(DocumentationAdapter)</a> - Method in interface org.skriptlang.skript.registration.<a href="org/skriptlang/skript/registration/SyntaxRegistry.html" title="interface in org.skriptlang.skript.registration">SyntaxRegistry</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="org/skriptlang/skript/registration/SyntaxRegistry.html#write(org.skriptlang.skript.docs.DocumentationAdapter,java.lang.Iterable)" class="member-name-link">write(DocumentationAdapter, Iterable)</a> - Method in interface org.skriptlang.skript.registration.<a href="org/skriptlang/skript/registration/SyntaxRegistry.html" title="interface in org.skriptlang.skript.registration">SyntaxRegistry</a></dt>
-<dd>
-<div class="block">Like <a href="org/skriptlang/skript/registration/SyntaxRegistry.html#write(org.skriptlang.skript.docs.DocumentationAdapter)"><code>SyntaxRegistry.write(DocumentationAdapter)</code></a>, but only writes specific keys.</div>
-</dd>
 <dt><a href="ch/njol/yggdrasil/DefaultYggdrasilOutputStream.html#writeArrayComponentType(java.lang.Class)" class="member-name-link">writeArrayComponentType(Class)</a> - Method in class ch.njol.yggdrasil.<a href="ch/njol/yggdrasil/DefaultYggdrasilOutputStream.html" title="class in ch.njol.yggdrasil">DefaultYggdrasilOutputStream</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="ch/njol/yggdrasil/YggdrasilOutputStream.html#writeArrayComponentType(java.lang.Class)" class="member-name-link">writeArrayComponentType(Class)</a> - Method in class ch.njol.yggdrasil.<a href="ch/njol/yggdrasil/YggdrasilOutputStream.html" title="class in ch.njol.yggdrasil">YggdrasilOutputStream</a></dt>
