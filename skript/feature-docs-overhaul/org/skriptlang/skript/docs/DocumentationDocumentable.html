@@ -58,7 +58,7 @@ loadScripts(document, 'script');</script>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
 <ol class="toc-list">
 <li><a href="#documentation()" tabindex="0">documentation()</a></li>
-<li><a href="#documentationIdPrefix()" tabindex="0">documentationIdPrefix()</a></li>
+<li><a href="#documentationAutoId()" tabindex="0">documentationAutoId()</a></li>
 <li><a href="#canWrite(org.skriptlang.skript.docs.DocumentationAdapter)" tabindex="0">canWrite(DocumentationAdapter)</a></li>
 <li><a href="#preWrite(org.skriptlang.skript.docs.DocumentationAdapter)" tabindex="0">preWrite(DocumentationAdapter)</a></li>
 <li><a href="#write(org.skriptlang.skript.docs.DocumentationAdapter)" tabindex="0">write(DocumentationAdapter)</a></li>
@@ -117,7 +117,7 @@ extends <a href="Documentable.html" title="interface in org.skriptlang.skript.do
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#documentation()" class="member-name-link">documentation</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#documentationIdPrefix()" class="member-name-link">documentationIdPrefix</a>()</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#documentationAutoId()" class="member-name-link">documentationAutoId</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#postWrite(org.skriptlang.skript.docs.DocumentationAdapter)" class="member-name-link">postWrite</a><wbr>(<a href="DocumentationAdapter.html" title="interface in org.skriptlang.skript.docs">DocumentationAdapter</a>&nbsp;adapter)</code></div>
@@ -161,14 +161,15 @@ extends <a href="Documentable.html" title="interface in org.skriptlang.skript.do
 </section>
 </li>
 <li>
-<section class="detail" id="documentationIdPrefix()">
-<h3>documentationIdPrefix</h3>
+<section class="detail" id="documentationAutoId()">
+<h3>documentationAutoId</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">documentationIdPrefix</span>()</div>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">documentationAutoId</span>()</div>
 <dl class="notes">
 <dt>Returns:</dt>
-<dd>Can be overridden so that the automatically generated ID of this documentable is prefixed.
-If an ID is explicitly set on this documentable's <a href="#documentation()"><code>documentation()</code></a>, this method is unused.</dd>
+<dd>An automatically generated ID for this documentable.
+By default, this method simply wraps <a href="Documentation.html#autoId()"><code>Documentation.autoId()</code></a>.
+However, it can be overridden for additional functionality, such as enforcing an automatic prefix.</dd>
 </dl>
 </div>
 </section>

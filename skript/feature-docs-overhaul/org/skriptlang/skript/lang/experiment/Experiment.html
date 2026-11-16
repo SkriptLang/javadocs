@@ -65,8 +65,8 @@ loadScripts(document, 'script');</script>
 <li><a href="#isKnown()" tabindex="0">isKnown()</a></li>
 <li><a href="#pattern()" tabindex="0">pattern()</a></li>
 <li><a href="#matches(java.lang.String)" tabindex="0">matches(String)</a></li>
+<li><a href="#documentationAutoId()" tabindex="0">documentationAutoId()</a></li>
 <li><a href="#write(org.skriptlang.skript.docs.DocumentationAdapter)" tabindex="0">write(DocumentationAdapter)</a></li>
-<li><a href="#documentationIdPrefix()" tabindex="0">documentationIdPrefix()</a></li>
 </ol>
 </li>
 </ol>
@@ -129,7 +129,7 @@ by Skript or any of its addons.</div>
 <div class="block">A constant experiment provider (designed for the use of addons).</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#documentationIdPrefix()" class="member-name-link">documentationIdPrefix</a>()</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#documentationAutoId()" class="member-name-link">documentationAutoId</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#isKnown()" class="member-name-link">isKnown</a>()</code></div>
@@ -280,6 +280,22 @@ Ideally, this should be matched by one of the <a href="#pattern()"><code>pattern
 </section>
 </li>
 <li>
+<section class="detail" id="documentationAutoId()">
+<h3>documentationAutoId</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">documentationAutoId</span>()</div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="../../docs/DocumentationDocumentable.html#documentationAutoId()">documentationAutoId</a></code>&nbsp;in interface&nbsp;<code><a href="../../docs/DocumentationDocumentable.html" title="interface in org.skriptlang.skript.docs">DocumentationDocumentable</a></code></dd>
+<dt>Returns:</dt>
+<dd>An automatically generated ID for this documentable.
+By default, this method simply wraps <a href="../../docs/Documentation.html#autoId()"><code>Documentation.autoId()</code></a>.
+However, it can be overridden for additional functionality, such as enforcing an automatic prefix.</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
 <section class="detail" id="write(org.skriptlang.skript.docs.DocumentationAdapter)">
 <h3>write</h3>
 <div class="horizontal-scroll">
@@ -293,21 +309,6 @@ Ideally, this should be matched by one of the <a href="#pattern()"><code>pattern
 <dd><code><a href="../../docs/DocumentationDocumentable.html#write(org.skriptlang.skript.docs.DocumentationAdapter)">write</a></code>&nbsp;in interface&nbsp;<code><a href="../../docs/DocumentationDocumentable.html" title="interface in org.skriptlang.skript.docs">DocumentationDocumentable</a></code></dd>
 <dt>Parameters:</dt>
 <dd><code>adapter</code> - The adapter to write to.</dd>
-</dl>
-</div>
-</section>
-</li>
-<li>
-<section class="detail" id="documentationIdPrefix()">
-<h3>documentationIdPrefix</h3>
-<div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">documentationIdPrefix</span>()</div>
-<dl class="notes">
-<dt>Specified by:</dt>
-<dd><code><a href="../../docs/DocumentationDocumentable.html#documentationIdPrefix()">documentationIdPrefix</a></code>&nbsp;in interface&nbsp;<code><a href="../../docs/DocumentationDocumentable.html" title="interface in org.skriptlang.skript.docs">DocumentationDocumentable</a></code></dd>
-<dt>Returns:</dt>
-<dd>Can be overridden so that the automatically generated ID of this documentable is prefixed.
-If an ID is explicitly set on this documentable's <a href="../../docs/DocumentationDocumentable.html#documentation()"><code>DocumentationDocumentable.documentation()</code></a>, this method is unused.</dd>
 </dl>
 </div>
 </section>

@@ -107,8 +107,8 @@ loadScripts(document, 'script');</script>
 <li><a href="#getPropertyDocumentation(org.skriptlang.skript.lang.properties.Property)" tabindex="0">getPropertyDocumentation(Property)</a></li>
 <li><a href="#documentation()" tabindex="0">documentation()</a></li>
 <li><a href="#documentation(org.skriptlang.skript.docs.Documentation)" tabindex="0">documentation(Documentation)</a></li>
+<li><a href="#documentationAutoId()" tabindex="0">documentationAutoId()</a></li>
 <li><a href="#write(org.skriptlang.skript.docs.DocumentationAdapter)" tabindex="0">write(DocumentationAdapter)</a></li>
-<li><a href="#documentationIdPrefix()" tabindex="0">documentationIdPrefix()</a></li>
 <li><a href="#name(java.lang.String)" tabindex="0">name(String)</a></li>
 <li><a href="#description(java.lang.String...)" tabindex="0">description(String...)</a></li>
 <li><a href="#usage(java.lang.String...)" tabindex="0">usage(String...)</a></li>
@@ -266,16 +266,16 @@ returning the given object if no <a href="Cloner.html" title="interface in ch.nj
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="ClassInfo.html" title="class in ch.njol.skript.classes">ClassInfo</a><wbr>&lt;<a href="#type-param-T" title="type parameter in ClassInfo">T</a>&gt;</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#documentation(org.skriptlang.skript.docs.Documentation)" class="member-name-link">documentation</a><wbr>(<a href="../../../../org/skriptlang/skript/docs/Documentation.html" title="interface in org.skriptlang.skript.docs">Documentation</a>&nbsp;documentation)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="ClassInfo.html" title="class in ch.njol.skript.classes">ClassInfo</a><wbr>&lt;<a href="#type-param-T" title="type parameter in ClassInfo">T</a>&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#documentationId(java.lang.String)" class="member-name-link">documentationId</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;id)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#documentationAutoId()" class="member-name-link">documentationAutoId</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="ClassInfo.html" title="class in ch.njol.skript.classes">ClassInfo</a><wbr>&lt;<a href="#type-param-T" title="type parameter in ClassInfo">T</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#documentationId(java.lang.String)" class="member-name-link">documentationId</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;id)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
 <div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
 <div class="deprecation-comment">Use <a href="#documentation(org.skriptlang.skript.docs.Documentation)"><code>documentation(Documentation)</code></a>.</div>
 </div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#documentationIdPrefix()" class="member-name-link">documentationIdPrefix</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="ClassInfo.html" title="class in ch.njol.skript.classes">ClassInfo</a><wbr>&lt;<a href="#type-param-T" title="type parameter in ClassInfo">T</a>&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#examples(java.lang.String...)" class="member-name-link">examples</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>...&nbsp;examples)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
@@ -1018,6 +1018,22 @@ Meant to be used for documentation.</div>
 </section>
 </li>
 <li>
+<section class="detail" id="documentationAutoId()">
+<h3>documentationAutoId</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">documentationAutoId</span>()</div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="../../../../org/skriptlang/skript/docs/DocumentationDocumentable.html#documentationAutoId()">documentationAutoId</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/skriptlang/skript/docs/DocumentationDocumentable.html" title="interface in org.skriptlang.skript.docs">DocumentationDocumentable</a></code></dd>
+<dt>Returns:</dt>
+<dd>An automatically generated ID for this documentable.
+By default, this method simply wraps <a href="../../../../org/skriptlang/skript/docs/Documentation.html#autoId()"><code>Documentation.autoId()</code></a>.
+However, it can be overridden for additional functionality, such as enforcing an automatic prefix.</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
 <section class="detail" id="write(org.skriptlang.skript.docs.DocumentationAdapter)">
 <h3>write</h3>
 <div class="horizontal-scroll">
@@ -1031,21 +1047,6 @@ Meant to be used for documentation.</div>
 <dd><code><a href="../../../../org/skriptlang/skript/docs/DocumentationDocumentable.html#write(org.skriptlang.skript.docs.DocumentationAdapter)">write</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/skriptlang/skript/docs/DocumentationDocumentable.html" title="interface in org.skriptlang.skript.docs">DocumentationDocumentable</a></code></dd>
 <dt>Parameters:</dt>
 <dd><code>adapter</code> - The adapter to write to.</dd>
-</dl>
-</div>
-</section>
-</li>
-<li>
-<section class="detail" id="documentationIdPrefix()">
-<h3>documentationIdPrefix</h3>
-<div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">documentationIdPrefix</span>()</div>
-<dl class="notes">
-<dt>Specified by:</dt>
-<dd><code><a href="../../../../org/skriptlang/skript/docs/DocumentationDocumentable.html#documentationIdPrefix()">documentationIdPrefix</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/skriptlang/skript/docs/DocumentationDocumentable.html" title="interface in org.skriptlang.skript.docs">DocumentationDocumentable</a></code></dd>
-<dt>Returns:</dt>
-<dd>Can be overridden so that the automatically generated ID of this documentable is prefixed.
-If an ID is explicitly set on this documentable's <a href="../../../../org/skriptlang/skript/docs/DocumentationDocumentable.html#documentation()"><code>DocumentationDocumentable.documentation()</code></a>, this method is unused.</dd>
 </dl>
 </div>
 </section>
