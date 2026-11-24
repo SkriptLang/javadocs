@@ -75,7 +75,7 @@ loadScripts(document, 'script');</script>
 <li><a href="#patterns()" tabindex="0">patterns()</a></li>
 <li><a href="#priority()" tabindex="0">priority()</a></li>
 <li><a href="#documentation()" tabindex="0">documentation()</a></li>
-<li><a href="#preWrite(org.skriptlang.skript.docs.DocumentationAdapter)" tabindex="0">preWrite(DocumentationAdapter)</a></li>
+<li><a href="#documentationAutoId()" tabindex="0">documentationAutoId()</a></li>
 <li><a href="#write(org.skriptlang.skript.docs.DocumentationAdapter)" tabindex="0">write(DocumentationAdapter)</a></li>
 </ol>
 </li>
@@ -178,24 +178,22 @@ extends <a href="../docs/DocumentationDocumentable.html" title="interface in org
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../docs/Documentation.html" title="interface in org.skriptlang.skript.docs">Documentation</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#documentation()" class="member-name-link">documentation</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#type-param-E" title="type parameter in SyntaxInfo">E</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#instance()" class="member-name-link">instance</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6"><code>default <a href="../docs/Origin.html" title="interface in org.skriptlang.skript.docs">Origin</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6"><code><a href="#origin()" class="member-name-link">origin</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#documentationAutoId()" class="member-name-link">documentationAutoId</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#type-param-E" title="type parameter in SyntaxInfo">E</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#instance()" class="member-name-link">instance</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6"><code>default <a href="../docs/Origin.html" title="interface in org.skriptlang.skript.docs">Origin</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6"><code><a href="#origin()" class="member-name-link">origin</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5 method-summary-table-tab6">
 <div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
 <div class="deprecation-comment">Use <a href="../docs/Documentation.html#origin()"><code>Documentation.origin()</code></a>.</div>
 </div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://www.javadocs.dev/org.jetbrains/annotations/26.0.2/org/jetbrains/annotations/Unmodifiable.html" title="class or interface in org.jetbrains.annotations" class="external-link">@Unmodifiable</a> <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/SequencedCollection.html" title="class or interface in java.util" class="external-link">SequencedCollection</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#patterns()" class="member-name-link">patterns</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#preWrite(org.skriptlang.skript.docs.DocumentationAdapter)" class="member-name-link">preWrite</a><wbr>(<a href="../docs/DocumentationAdapter.html" title="interface in org.skriptlang.skript.docs">DocumentationAdapter</a>&nbsp;adapter)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
-<div class="block">Called immediately before the <a href="../docs/Documentable.html#write(org.skriptlang.skript.docs.DocumentationAdapter)"><code>Documentable.write(DocumentationAdapter)</code></a> process.</div>
-</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://www.javadocs.dev/org.jetbrains/annotations/26.0.2/org/jetbrains/annotations/Unmodifiable.html" title="class or interface in org.jetbrains.annotations" class="external-link">@Unmodifiable</a> <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/SequencedCollection.html" title="class or interface in java.util" class="external-link">SequencedCollection</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#patterns()" class="member-name-link">patterns</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../util/Priority.html" title="interface in org.skriptlang.skript.util">Priority</a></code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#priority()" class="member-name-link">priority</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
@@ -222,7 +220,7 @@ extends <a href="../docs/DocumentationDocumentable.html" title="interface in org
 </div>
 <div class="inherited-list">
 <h3 id="methods-inherited-from-class-org.skriptlang.skript.docs.DocumentationDocumentable">Methods inherited from interface&nbsp;<a href="../docs/DocumentationDocumentable.html#method-summary" title="interface in org.skriptlang.skript.docs">DocumentationDocumentable</a></h3>
-<code><a href="../docs/DocumentationDocumentable.html#canWrite(org.skriptlang.skript.docs.DocumentationAdapter)" title="canWrite(DocumentationAdapter)">canWrite</a>, <a href="../docs/DocumentationDocumentable.html#documentationIdPrefix()" title="documentationIdPrefix()">documentationIdPrefix</a>, <a href="../docs/DocumentationDocumentable.html#postWrite(org.skriptlang.skript.docs.DocumentationAdapter)" title="postWrite(DocumentationAdapter)">postWrite</a></code></div>
+<code><a href="../docs/DocumentationDocumentable.html#canWrite(org.skriptlang.skript.docs.DocumentationAdapter)" title="canWrite(DocumentationAdapter)">canWrite</a>, <a href="../docs/DocumentationDocumentable.html#postWrite(org.skriptlang.skript.docs.DocumentationAdapter)" title="postWrite(DocumentationAdapter)">postWrite</a>, <a href="../docs/DocumentationDocumentable.html#preWrite(org.skriptlang.skript.docs.DocumentationAdapter)" title="preWrite(DocumentationAdapter)">preWrite</a></code></div>
 </section>
 </li>
 </ul>
@@ -405,19 +403,17 @@ Example: "[the] [loop-]<span class="invalid-tag">invalid input: '&lt;'</span>.+&
 </section>
 </li>
 <li>
-<section class="detail" id="preWrite(org.skriptlang.skript.docs.DocumentationAdapter)">
-<h3>preWrite</h3>
+<section class="detail" id="documentationAutoId()">
+<h3>documentationAutoId</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">preWrite</span><wbr><span class="parameters">(<a href="../docs/DocumentationAdapter.html" title="interface in org.skriptlang.skript.docs">DocumentationAdapter</a>&nbsp;adapter)</span></div>
-<div class="block"><span class="description-from-type-label">Description copied from interface:&nbsp;<code><a href="../docs/Documentable.html#preWrite(org.skriptlang.skript.docs.DocumentationAdapter)">Documentable</a></code></span></div>
-<div class="block">Called immediately before the <a href="../docs/Documentable.html#write(org.skriptlang.skript.docs.DocumentationAdapter)"><code>Documentable.write(DocumentationAdapter)</code></a> process.</div>
+<div class="member-signature"><span class="modifiers">default</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">documentationAutoId</span>()</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="../docs/Documentable.html#preWrite(org.skriptlang.skript.docs.DocumentationAdapter)">preWrite</a></code>&nbsp;in interface&nbsp;<code><a href="../docs/Documentable.html" title="interface in org.skriptlang.skript.docs">Documentable</a></code></dd>
-<dt>Specified by:</dt>
-<dd><code><a href="../docs/DocumentationDocumentable.html#preWrite(org.skriptlang.skript.docs.DocumentationAdapter)">preWrite</a></code>&nbsp;in interface&nbsp;<code><a href="../docs/DocumentationDocumentable.html" title="interface in org.skriptlang.skript.docs">DocumentationDocumentable</a></code></dd>
-<dt>Parameters:</dt>
-<dd><code>adapter</code> - The adapter to be written to.</dd>
+<dd><code><a href="../docs/DocumentationDocumentable.html#documentationAutoId()">documentationAutoId</a></code>&nbsp;in interface&nbsp;<code><a href="../docs/DocumentationDocumentable.html" title="interface in org.skriptlang.skript.docs">DocumentationDocumentable</a></code></dd>
+<dt>Returns:</dt>
+<dd>An automatically generated ID for this documentable.
+By default, this method simply wraps <a href="../docs/Documentation.html#autoId()"><code>Documentation.autoId()</code></a>.
+However, it can be overridden for additional functionality, such as enforcing an automatic prefix.</dd>
 </dl>
 </div>
 </section>

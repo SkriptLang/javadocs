@@ -80,9 +80,9 @@ loadScripts(document, 'script');</script>
 <li><a href="#getSince()" tabindex="0">getSince()</a></li>
 <li><a href="#resetReturnValue()" tabindex="0">resetReturnValue()</a></li>
 <li><a href="#documentation()" tabindex="0">documentation()</a></li>
+<li><a href="#documentationAutoId()" tabindex="0">documentationAutoId()</a></li>
 <li><a href="#canWrite(org.skriptlang.skript.docs.DocumentationAdapter)" tabindex="0">canWrite(DocumentationAdapter)</a></li>
 <li><a href="#write(org.skriptlang.skript.docs.DocumentationAdapter)" tabindex="0">write(DocumentationAdapter)</a></li>
-<li><a href="#documentationIdPrefix()" tabindex="0">documentationIdPrefix()</a></li>
 </ol>
 </li>
 </ol>
@@ -187,7 +187,7 @@ implements <a href="../../../../../org/skriptlang/skript/docs/DocumentationDocum
 <div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
 &nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#documentationIdPrefix()" class="member-name-link">documentationIdPrefix</a>()</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#documentationAutoId()" class="member-name-link">documentationAutoId</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
 <div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
 &nbsp;</div>
@@ -537,6 +537,23 @@ Should be called right after execution.</div>
 </section>
 </li>
 <li>
+<section class="detail" id="documentationAutoId()">
+<h3>documentationAutoId</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">documentationAutoId</span>()</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
+<dl class="notes">
+<dt>Specified by:</dt>
+<dd><code><a href="../../../../../org/skriptlang/skript/docs/DocumentationDocumentable.html#documentationAutoId()">documentationAutoId</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/skriptlang/skript/docs/DocumentationDocumentable.html" title="interface in org.skriptlang.skript.docs">DocumentationDocumentable</a></code></dd>
+<dt>Returns:</dt>
+<dd>An automatically generated ID for this documentable.
+By default, this method simply wraps <a href="../../../../../org/skriptlang/skript/docs/Documentation.html#autoId()"><code>Documentation.autoId()</code></a>.
+However, it can be overridden for additional functionality, such as enforcing an automatic prefix.</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
 <section class="detail" id="canWrite(org.skriptlang.skript.docs.DocumentationAdapter)">
 <h3>canWrite</h3>
 <div class="horizontal-scroll">
@@ -574,22 +591,6 @@ Should be called right after execution.</div>
 <dd><code><a href="../../../../../org/skriptlang/skript/common/function/Function.html#write(org.skriptlang.skript.docs.DocumentationAdapter)">write</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/skriptlang/skript/common/function/Function.html" title="interface in org.skriptlang.skript.common.function">Function</a>&lt;<a href="#type-param-T" title="type parameter in JavaFunction">T</a>&gt;</code></dd>
 <dt>Parameters:</dt>
 <dd><code>adapter</code> - The adapter to write to.</dd>
-</dl>
-</div>
-</section>
-</li>
-<li>
-<section class="detail" id="documentationIdPrefix()">
-<h3>documentationIdPrefix</h3>
-<div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">documentationIdPrefix</span>()</div>
-<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
-<dl class="notes">
-<dt>Specified by:</dt>
-<dd><code><a href="../../../../../org/skriptlang/skript/docs/DocumentationDocumentable.html#documentationIdPrefix()">documentationIdPrefix</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../org/skriptlang/skript/docs/DocumentationDocumentable.html" title="interface in org.skriptlang.skript.docs">DocumentationDocumentable</a></code></dd>
-<dt>Returns:</dt>
-<dd>Can be overridden so that the automatically generated ID of this documentable is prefixed.
-If an ID is explicitly set on this documentable's <a href="../../../../../org/skriptlang/skript/docs/DocumentationDocumentable.html#documentation()"><code>DocumentationDocumentable.documentation()</code></a>, this method is unused.</dd>
 </dl>
 </div>
 </section>

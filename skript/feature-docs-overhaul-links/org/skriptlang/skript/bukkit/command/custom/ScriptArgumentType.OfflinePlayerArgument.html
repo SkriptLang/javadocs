@@ -60,12 +60,12 @@ loadScripts(document, 'script');</script>
 <li><a href="#method-summary" tabindex="0">Method Summary</a></li>
 <li><a href="#field-detail" tabindex="0">Field Details</a>
 <ol class="toc-list">
-<li><a href="#nativeType" tabindex="0">nativeType</a></li>
+<li><a href="#stringType" tabindex="0">stringType</a></li>
 </ol>
 </li>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
 <ol class="toc-list">
-<li><a href="#create(org.skriptlang.skript.bukkit.command.custom.ArgumentData,com.mojang.brigadier.arguments.StringArgumentType)" tabindex="0">create(ArgumentData, StringArgumentType)</a></li>
+<li><a href="#create(org.skriptlang.skript.bukkit.command.custom.ArgumentData,com.mojang.brigadier.arguments.ArgumentType)" tabindex="0">create(ArgumentData, ArgumentType)</a></li>
 <li><a href="#parse(com.mojang.brigadier.StringReader)" tabindex="0">parse(StringReader)</a></li>
 <li><a href="#parse(com.mojang.brigadier.StringReader,S)" tabindex="0">parse(StringReader, S)</a></li>
 <li><a href="#parseOfflinePlayer(java.lang.String)" tabindex="0">parseOfflinePlayer(String)</a></li>
@@ -121,8 +121,8 @@ May return an <a href="https://jd.papermc.io/paper/26.3/org/bukkit/OfflinePlayer
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Field</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code>protected final com.mojang.brigadier.arguments.StringArgumentType</code></div>
-<div class="col-second even-row-color"><code><a href="#nativeType" class="member-name-link">nativeType</a></code></div>
+<div class="col-first even-row-color"><code>protected final com.mojang.brigadier.arguments.ArgumentType<wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="#stringType" class="member-name-link">stringType</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
 </div>
 </section>
@@ -139,8 +139,8 @@ May return an <a href="https://jd.papermc.io/paper/26.3/org/bukkit/OfflinePlayer
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="ScriptArgumentType.OfflinePlayerArgument.html" title="class in org.skriptlang.skript.bukkit.command.custom">ScriptArgumentType.OfflinePlayerArgument</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#create(org.skriptlang.skript.bukkit.command.custom.ArgumentData,com.mojang.brigadier.arguments.StringArgumentType)" class="member-name-link">create</a><wbr>(<a href="ArgumentData.html" title="class in org.skriptlang.skript.bukkit.command.custom">ArgumentData</a>&lt;<a href="https://jd.papermc.io/paper/26.3/org/bukkit/OfflinePlayer.html" title="class or interface in org.bukkit" class="external-link">OfflinePlayer</a>&gt;&nbsp;argument,
- com.mojang.brigadier.arguments.StringArgumentType&nbsp;nativeType)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#create(org.skriptlang.skript.bukkit.command.custom.ArgumentData,com.mojang.brigadier.arguments.ArgumentType)" class="member-name-link">create</a><wbr>(<a href="ArgumentData.html" title="class in org.skriptlang.skript.bukkit.command.custom">ArgumentData</a>&lt;<a href="https://jd.papermc.io/paper/26.3/org/bukkit/OfflinePlayer.html" title="class or interface in org.bukkit" class="external-link">OfflinePlayer</a>&gt;&nbsp;argument,
+ com.mojang.brigadier.arguments.ArgumentType&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&nbsp;stringType)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>protected abstract com.mojang.brigadier.arguments.ArgumentType<wbr>&lt;?&gt;</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getPlayerType()" class="member-name-link">getPlayerType</a>()</code></div>
@@ -176,10 +176,10 @@ May return an <a href="https://jd.papermc.io/paper/26.3/org/bukkit/OfflinePlayer
 <h2>Field Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="nativeType">
-<h3>nativeType</h3>
+<section class="detail" id="stringType">
+<h3>stringType</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">protected final</span>&nbsp;<span class="return-type">com.mojang.brigadier.arguments.StringArgumentType</span>&nbsp;<span class="element-name">nativeType</span></div>
+<div class="member-signature"><span class="modifiers">protected final</span>&nbsp;<span class="return-type">com.mojang.brigadier.arguments.ArgumentType&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</span>&nbsp;<span class="element-name">stringType</span></div>
 </div>
 </section>
 </li>
@@ -192,11 +192,11 @@ May return an <a href="https://jd.papermc.io/paper/26.3/org/bukkit/OfflinePlayer
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="create(org.skriptlang.skript.bukkit.command.custom.ArgumentData,com.mojang.brigadier.arguments.StringArgumentType)">
+<section class="detail" id="create(org.skriptlang.skript.bukkit.command.custom.ArgumentData,com.mojang.brigadier.arguments.ArgumentType)">
 <h3>create</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="ScriptArgumentType.OfflinePlayerArgument.html" title="class in org.skriptlang.skript.bukkit.command.custom">ScriptArgumentType.OfflinePlayerArgument</a></span>&nbsp;<span class="element-name">create</span><wbr><span class="parameters">(<a href="ArgumentData.html" title="class in org.skriptlang.skript.bukkit.command.custom">ArgumentData</a>&lt;<a href="https://jd.papermc.io/paper/26.3/org/bukkit/OfflinePlayer.html" title="class or interface in org.bukkit" class="external-link">OfflinePlayer</a>&gt;&nbsp;argument,
- com.mojang.brigadier.arguments.StringArgumentType&nbsp;nativeType)</span></div>
+ com.mojang.brigadier.arguments.ArgumentType&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&nbsp;stringType)</span></div>
 </div>
 </section>
 </li>

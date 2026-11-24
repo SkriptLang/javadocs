@@ -61,12 +61,12 @@ loadScripts(document, 'script');</script>
 <li><a href="#method-summary" tabindex="0">Method Summary</a></li>
 <li><a href="#constructor-detail" tabindex="0">Constructor Details</a>
 <ol class="toc-list">
-<li><a href="#%3Cinit%3E(org.skriptlang.skript.bukkit.command.custom.ArgumentData,com.mojang.brigadier.arguments.StringArgumentType)" tabindex="0">Suggesting(ArgumentData, StringArgumentType)</a></li>
+<li><a href="#%3Cinit%3E(org.skriptlang.skript.bukkit.command.custom.ArgumentData,com.mojang.brigadier.arguments.ArgumentType)" tabindex="0">Suggesting(ArgumentData, ArgumentType)</a></li>
 </ol>
 </li>
 <li><a href="#method-detail" tabindex="0">Method Details</a>
 <ol class="toc-list">
-<li><a href="#parseWithNativeType(com.mojang.brigadier.StringReader)" tabindex="0">parseWithNativeType(StringReader)</a></li>
+<li><a href="#parseWithStringType(com.mojang.brigadier.StringReader)" tabindex="0">parseWithStringType(StringReader)</a></li>
 <li><a href="#listSuggestions(com.mojang.brigadier.context.CommandContext,com.mojang.brigadier.suggestion.SuggestionsBuilder)" tabindex="0">listSuggestions(CommandContext, SuggestionsBuilder)</a></li>
 <li><a href="#listSuggestions(com.mojang.brigadier.context.CommandContext,com.mojang.brigadier.suggestion.SuggestionsBuilder,org.skriptlang.skript.bukkit.command.elements.structures.util.ScriptSuggestionProvider.FilteringMode)" tabindex="0">listSuggestions(CommandContext, SuggestionsBuilder, ScriptSuggestionProvider.FilteringMode)</a></li>
 </ol>
@@ -107,7 +107,7 @@ loadScripts(document, 'script');</script>
 <h2>Nested Class Summary</h2>
 <div class="inherited-list">
 <h3 id="nested-classes-inherited-from-class-org.skriptlang.skript.bukkit.command.custom.ScriptArgumentType">Nested classes/interfaces inherited from class&nbsp;<a href="ScriptArgumentType.html#nested-class-summary" title="class in org.skriptlang.skript.bukkit.command.custom">ScriptArgumentType</a></h3>
-<code><a href="ScriptArgumentType.NativeArgumentData.html" title="class in org.skriptlang.skript.bukkit.command.custom">ScriptArgumentType.NativeArgumentData</a>, <a href="ScriptArgumentType.OfflinePlayerArgument.html" title="class in org.skriptlang.skript.bukkit.command.custom">ScriptArgumentType.OfflinePlayerArgument</a>, <a href="ScriptArgumentType.ScriptArgumentResolver.html" title="interface in org.skriptlang.skript.bukkit.command.custom">ScriptArgumentType.ScriptArgumentResolver</a>&lt;T&gt;, <a href="ScriptArgumentType.Suggesting.html" title="class in org.skriptlang.skript.bukkit.command.custom">ScriptArgumentType.Suggesting</a>&lt;T&gt;</code></div>
+<code><a href="ScriptArgumentType.NativeArgumentData.html" title="class in org.skriptlang.skript.bukkit.command.custom">ScriptArgumentType.NativeArgumentData</a>, <a href="ScriptArgumentType.OfflinePlayerArgument.html" title="class in org.skriptlang.skript.bukkit.command.custom">ScriptArgumentType.OfflinePlayerArgument</a>, <a href="ScriptArgumentType.ScriptArgumentResolver.html" title="interface in org.skriptlang.skript.bukkit.command.custom">ScriptArgumentType.ScriptArgumentResolver</a>&lt;T&gt;, <a href="ScriptArgumentType.ScriptStringArgument.html" title="class in org.skriptlang.skript.bukkit.command.custom">ScriptArgumentType.ScriptStringArgument</a>, <a href="ScriptArgumentType.Suggesting.html" title="class in org.skriptlang.skript.bukkit.command.custom">ScriptArgumentType.Suggesting</a>&lt;T&gt;</code></div>
 <div class="inherited-list">
 <h3 id="nested-classes-inherited-from-class-io.papermc.paper.command.brigadier.argument.CustomArgumentType">Nested classes/interfaces inherited from interface&nbsp;<a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/command/brigadier/argument/CustomArgumentType.html#nested-class-summary" title="class or interface in io.papermc.paper.command.brigadier.argument" class="external-link">CustomArgumentType</a></h3>
 <code><a href="https://jd.papermc.io/paper/26.3/io/papermc/paper/command/brigadier/argument/CustomArgumentType.Converted.html" title="class or interface in io.papermc.paper.command.brigadier.argument" class="external-link">CustomArgumentType.Converted</a>&lt;T,<wbr>N&gt;</code></div>
@@ -119,7 +119,7 @@ loadScripts(document, 'script');</script>
 <h2>Field Summary</h2>
 <div class="inherited-list">
 <h3 id="fields-inherited-from-class-org.skriptlang.skript.bukkit.command.custom.ScriptArgumentType">Fields inherited from class&nbsp;<a href="ScriptArgumentType.html#field-summary" title="class in org.skriptlang.skript.bukkit.command.custom">ScriptArgumentType</a></h3>
-<code><a href="ScriptArgumentType.html#argument">argument</a>, <a href="ScriptArgumentType.html#nativeType">nativeType</a></code></div>
+<code><a href="ScriptArgumentType.html#argument">argument</a>, <a href="ScriptArgumentType.html#stringType">stringType</a></code></div>
 </section>
 </li>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
@@ -130,8 +130,8 @@ loadScripts(document, 'script');</script>
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(org.skriptlang.skript.bukkit.command.custom.ArgumentData,com.mojang.brigadier.arguments.StringArgumentType)" class="member-name-link">Suggesting</a><wbr>(<a href="https://www.javadocs.dev/org.jetbrains/annotations/26.0.2/org/jetbrains/annotations/NotNull.html" title="class or interface in org.jetbrains.annotations" class="external-link">@NotNull</a> <a href="ArgumentData.html" title="class in org.skriptlang.skript.bukkit.command.custom">ArgumentData</a>&lt;<a href="#type-param-T" title="type parameter in ScriptArgumentType.Suggesting">T</a>&gt;&nbsp;argument,
- <a href="https://www.javadocs.dev/org.jetbrains/annotations/26.0.2/org/jetbrains/annotations/NotNull.html" title="class or interface in org.jetbrains.annotations" class="external-link">@NotNull</a> com.mojang.brigadier.arguments.StringArgumentType&nbsp;nativeType)</code></div>
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(org.skriptlang.skript.bukkit.command.custom.ArgumentData,com.mojang.brigadier.arguments.ArgumentType)" class="member-name-link">Suggesting</a><wbr>(<a href="https://www.javadocs.dev/org.jetbrains/annotations/26.0.2/org/jetbrains/annotations/NotNull.html" title="class or interface in org.jetbrains.annotations" class="external-link">@NotNull</a> <a href="ArgumentData.html" title="class in org.skriptlang.skript.bukkit.command.custom">ArgumentData</a>&lt;<a href="#type-param-T" title="type parameter in ScriptArgumentType.Suggesting">T</a>&gt;&nbsp;argument,
+ <a href="https://www.javadocs.dev/org.jetbrains/annotations/26.0.2/org/jetbrains/annotations/NotNull.html" title="class or interface in org.jetbrains.annotations" class="external-link">@NotNull</a> com.mojang.brigadier.arguments.ArgumentType&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&nbsp;stringType)</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
 </div>
 </section>
@@ -157,7 +157,7 @@ loadScripts(document, 'script');</script>
  <a href="https://www.javadocs.dev/org.jetbrains/annotations/26.0.2/org/jetbrains/annotations/NotNull.html" title="class or interface in org.jetbrains.annotations" class="external-link">@NotNull</a> com.mojang.brigadier.suggestion.SuggestionsBuilder&nbsp;builder)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#parseWithNativeType(com.mojang.brigadier.StringReader)" class="member-name-link">parseWithNativeType</a><wbr>(com.mojang.brigadier.StringReader&nbsp;reader)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#parseWithStringType(com.mojang.brigadier.StringReader)" class="member-name-link">parseWithStringType</a><wbr>(com.mojang.brigadier.StringReader&nbsp;reader)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 </div>
 </div>
@@ -183,13 +183,13 @@ loadScripts(document, 'script');</script>
 <h2>Constructor Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="&lt;init&gt;(org.skriptlang.skript.bukkit.command.custom.ArgumentData,com.mojang.brigadier.arguments.StringArgumentType)">
+<section class="detail" id="&lt;init&gt;(org.skriptlang.skript.bukkit.command.custom.ArgumentData,com.mojang.brigadier.arguments.ArgumentType)">
 <h3>Suggesting</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">Suggesting</span><wbr><span class="parameters">(<a href="https://www.javadocs.dev/org.jetbrains/annotations/26.0.2/org/jetbrains/annotations/NotNull.html" title="class or interface in org.jetbrains.annotations" class="external-link">@NotNull</a>
  <a href="https://www.javadocs.dev/org.jetbrains/annotations/26.0.2/org/jetbrains/annotations/NotNull.html" title="class or interface in org.jetbrains.annotations" class="external-link">@NotNull</a> <a href="ArgumentData.html" title="class in org.skriptlang.skript.bukkit.command.custom">ArgumentData</a>&lt;<a href="#type-param-T" title="type parameter in ScriptArgumentType.Suggesting">T</a>&gt;&nbsp;argument,
  <a href="https://www.javadocs.dev/org.jetbrains/annotations/26.0.2/org/jetbrains/annotations/NotNull.html" title="class or interface in org.jetbrains.annotations" class="external-link">@NotNull</a>
- <a href="https://www.javadocs.dev/org.jetbrains/annotations/26.0.2/org/jetbrains/annotations/NotNull.html" title="class or interface in org.jetbrains.annotations" class="external-link">@NotNull</a> com.mojang.brigadier.arguments.StringArgumentType&nbsp;nativeType)</span></div>
+ <a href="https://www.javadocs.dev/org.jetbrains/annotations/26.0.2/org/jetbrains/annotations/NotNull.html" title="class or interface in org.jetbrains.annotations" class="external-link">@NotNull</a> com.mojang.brigadier.arguments.ArgumentType&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&nbsp;stringType)</span></div>
 </div>
 </section>
 </li>
@@ -202,14 +202,14 @@ loadScripts(document, 'script');</script>
 <h2>Method Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="parseWithNativeType(com.mojang.brigadier.StringReader)">
-<h3>parseWithNativeType</h3>
+<section class="detail" id="parseWithStringType(com.mojang.brigadier.StringReader)">
+<h3>parseWithStringType</h3>
 <div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">parseWithNativeType</span><wbr><span class="parameters">(com.mojang.brigadier.StringReader&nbsp;reader)</span>
+<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">parseWithStringType</span><wbr><span class="parameters">(com.mojang.brigadier.StringReader&nbsp;reader)</span>
                               throws <span class="exceptions">com.mojang.brigadier.exceptions.CommandSyntaxException</span></div>
 <dl class="notes">
 <dt>Overrides:</dt>
-<dd><code><a href="ScriptArgumentType.html#parseWithNativeType(com.mojang.brigadier.StringReader)">parseWithNativeType</a></code>&nbsp;in class&nbsp;<code><a href="ScriptArgumentType.html" title="class in org.skriptlang.skript.bukkit.command.custom">ScriptArgumentType</a>&lt;<a href="#type-param-T" title="type parameter in ScriptArgumentType.Suggesting">T</a>&gt;</code></dd>
+<dd><code><a href="ScriptArgumentType.html#parseWithStringType(com.mojang.brigadier.StringReader)">parseWithStringType</a></code>&nbsp;in class&nbsp;<code><a href="ScriptArgumentType.html" title="class in org.skriptlang.skript.bukkit.command.custom">ScriptArgumentType</a>&lt;<a href="#type-param-T" title="type parameter in ScriptArgumentType.Suggesting">T</a>&gt;</code></dd>
 <dt>Throws:</dt>
 <dd><code>com.mojang.brigadier.exceptions.CommandSyntaxException</code></dd>
 </dl>
