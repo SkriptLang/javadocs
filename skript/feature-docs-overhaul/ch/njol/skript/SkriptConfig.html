@@ -98,6 +98,7 @@ loadScripts(document, 'script');</script>
 <li><a href="#scriptLoaderThreadSize" tabindex="0">scriptLoaderThreadSize</a></li>
 <li><a href="#useTypeProperties" tabindex="0">useTypeProperties</a></li>
 <li><a href="#allowUnsafePlatforms" tabindex="0">allowUnsafePlatforms</a></li>
+<li><a href="#enableLenientStringArguments" tabindex="0">enableLenientStringArguments</a></li>
 <li><a href="#enableLegacyTabCompletion" tabindex="0">enableLegacyTabCompletion</a></li>
 <li><a href="#keepLastUsageDates" tabindex="0">keepLastUsageDates</a></li>
 <li><a href="#loadDefaultAliases" tabindex="0">loadDefaultAliases</a></li>
@@ -272,114 +273,117 @@ loadScripts(document, 'script');</script>
 <div class="col-second even-row-color"><code><a href="#enableLegacyTabCompletion" class="member-name-link">enableLegacyTabCompletion</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
 <div class="col-first odd-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
-<div class="col-second odd-row-color"><code><a href="#enablePlayerVariableFix" class="member-name-link">enablePlayerVariableFix</a></code></div>
+<div class="col-second odd-row-color"><code><a href="#enableLenientStringArguments" class="member-name-link">enableLenientStringArguments</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
 <div class="col-first even-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
-<div class="col-second even-row-color"><code><a href="#enableScriptCaching" class="member-name-link">enableScriptCaching</a></code></div>
-<div class="col-last even-row-color">
-<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
-</div>
-<div class="col-first odd-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
-<div class="col-second odd-row-color"><code><a href="#enableTimings" class="member-name-link">enableTimings</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
-<div class="col-second even-row-color"><code><a href="#executeFunctionsWithMissingParams" class="member-name-link">executeFunctionsWithMissingParams</a></code></div>
+<div class="col-second even-row-color"><code><a href="#enablePlayerVariableFix" class="member-name-link">enablePlayerVariableFix</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
 <div class="col-first odd-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
-<div class="col-second odd-row-color"><code><a href="#keepConfigsLoaded" class="member-name-link">keepConfigsLoaded</a></code></div>
+<div class="col-second odd-row-color"><code><a href="#enableScriptCaching" class="member-name-link">enableScriptCaching</a></code></div>
+<div class="col-last odd-row-color">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
+</div>
+<div class="col-first even-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="#enableTimings" class="member-name-link">enableTimings</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
+<div class="col-second odd-row-color"><code><a href="#executeFunctionsWithMissingParams" class="member-name-link">executeFunctionsWithMissingParams</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
 <div class="col-first even-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
-<div class="col-second even-row-color"><code><a href="#keepLastUsageDates" class="member-name-link">keepLastUsageDates</a></code></div>
-<div class="col-last even-row-color">
+<div class="col-second even-row-color"><code><a href="#keepConfigsLoaded" class="member-name-link">keepConfigsLoaded</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
+<div class="col-second odd-row-color"><code><a href="#keepLastUsageDates" class="member-name-link">keepLastUsageDates</a></code></div>
+<div class="col-last odd-row-color">
 <div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
 <div class="deprecation-comment">This config option is no longer used and there is no replacement.</div>
 </div>
 </div>
-<div class="col-first odd-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</code></div>
-<div class="col-second odd-row-color"><code><a href="#language" class="member-name-link">language</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
-<div class="col-second even-row-color"><code><a href="#listenCancelledByDefault" class="member-name-link">listenCancelledByDefault</a></code></div>
-<div class="col-last even-row-color">
+<div class="col-first even-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="#language" class="member-name-link">language</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
+<div class="col-second odd-row-color"><code><a href="#listenCancelledByDefault" class="member-name-link">listenCancelledByDefault</a></code></div>
+<div class="col-last odd-row-color">
 <div class="block">Determines whether `on &lt;event&gt;` will be triggered by cancelled events or not.</div>
 </div>
-<div class="col-first odd-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
-<div class="col-second odd-row-color"><code><a href="#loadDefaultAliases" class="member-name-link">loadDefaultAliases</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
 <div class="col-first even-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
-<div class="col-second even-row-color"><code><a href="#logEffectCommands" class="member-name-link">logEffectCommands</a></code></div>
+<div class="col-second even-row-color"><code><a href="#loadDefaultAliases" class="member-name-link">loadDefaultAliases</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="util/Timespan.html" title="class in ch.njol.skript.util">Timespan</a>&gt;</code></div>
-<div class="col-second odd-row-color"><code><a href="#longParseTimeWarningThreshold" class="member-name-link">longParseTimeWarningThreshold</a></code></div>
+<div class="col-first odd-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
+<div class="col-second odd-row-color"><code><a href="#logEffectCommands" class="member-name-link">logEffectCommands</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</code></div>
-<div class="col-second even-row-color"><code><a href="#maxTargetBlockDistance" class="member-name-link">maxTargetBlockDistance</a></code></div>
+<div class="col-first even-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="util/Timespan.html" title="class in ch.njol.skript.util">Timespan</a>&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="#longParseTimeWarningThreshold" class="member-name-link">longParseTimeWarningThreshold</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
 <div class="col-first odd-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</code></div>
-<div class="col-second odd-row-color"><code><a href="#numberAccuracy" class="member-name-link">numberAccuracy</a></code></div>
-<div class="col-last odd-row-color">
+<div class="col-second odd-row-color"><code><a href="#maxTargetBlockDistance" class="member-name-link">maxTargetBlockDistance</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="#numberAccuracy" class="member-name-link">numberAccuracy</a></code></div>
+<div class="col-last even-row-color">
 <div class="block">Maximum number of digits to display after the period for floats and doubles</div>
 </div>
-<div class="col-first even-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</code></div>
-<div class="col-second even-row-color"><code><a href="#parseLinks" class="member-name-link">parseLinks</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/regex/Pattern.html" title="class or interface in java.util.regex" class="external-link">Pattern</a>&gt;</code></div>
-<div class="col-second odd-row-color"><code><a href="#playerNameRegexPattern" class="member-name-link">playerNameRegexPattern</a></code></div>
+<div class="col-first odd-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</code></div>
+<div class="col-second odd-row-color"><code><a href="#parseLinks" class="member-name-link">parseLinks</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</code></div>
-<div class="col-second even-row-color"><code><a href="#releaseChannel" class="member-name-link">releaseChannel</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="util/Timespan.html" title="class in ch.njol.skript.util">Timespan</a>&gt;</code></div>
-<div class="col-second odd-row-color"><code><a href="#runtimeErrorFrameDuration" class="member-name-link">runtimeErrorFrameDuration</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</code></div>
-<div class="col-second even-row-color"><code><a href="#runtimeErrorLimitLine" class="member-name-link">runtimeErrorLimitLine</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</code></div>
-<div class="col-second odd-row-color"><code><a href="#runtimeErrorLimitLineTimeout" class="member-name-link">runtimeErrorLimitLineTimeout</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</code></div>
-<div class="col-second even-row-color"><code><a href="#runtimeErrorLimitTotal" class="member-name-link">runtimeErrorLimitTotal</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</code></div>
-<div class="col-second odd-row-color"><code><a href="#runtimeErrorTimeoutDuration" class="member-name-link">runtimeErrorTimeoutDuration</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</code></div>
-<div class="col-second even-row-color"><code><a href="#runtimeWarningLimitLine" class="member-name-link">runtimeWarningLimitLine</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</code></div>
-<div class="col-second odd-row-color"><code><a href="#runtimeWarningLimitLineTimeout" class="member-name-link">runtimeWarningLimitLineTimeout</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</code></div>
-<div class="col-second even-row-color"><code><a href="#runtimeWarningLimitTotal" class="member-name-link">runtimeWarningLimitTotal</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</code></div>
-<div class="col-second odd-row-color"><code><a href="#runtimeWarningTimeoutDuration" class="member-name-link">runtimeWarningTimeoutDuration</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>[]&gt;</code></div>
-<div class="col-second even-row-color"><code><a href="#safeTags" class="member-name-link">safeTags</a></code></div>
+<div class="col-first even-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/regex/Pattern.html" title="class or interface in java.util.regex" class="external-link">Pattern</a>&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="#playerNameRegexPattern" class="member-name-link">playerNameRegexPattern</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
 <div class="col-first odd-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</code></div>
-<div class="col-second odd-row-color"><code><a href="#scriptLoaderThreadSize" class="member-name-link">scriptLoaderThreadSize</a></code></div>
+<div class="col-second odd-row-color"><code><a href="#releaseChannel" class="member-name-link">releaseChannel</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
-<div class="col-second even-row-color"><code><a href="#simplifySyntaxesOnParse" class="member-name-link">simplifySyntaxesOnParse</a></code></div>
+<div class="col-first even-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="util/Timespan.html" title="class in ch.njol.skript.util">Timespan</a>&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="#runtimeErrorFrameDuration" class="member-name-link">runtimeErrorFrameDuration</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="util/Timespan.html" title="class in ch.njol.skript.util">Timespan</a>&gt;</code></div>
-<div class="col-second odd-row-color"><code><a href="#updateCheckInterval" class="member-name-link">updateCheckInterval</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
-<div class="col-second even-row-color"><code><a href="#usePlayerUUIDsInVariableNames" class="member-name-link">usePlayerUUIDsInVariableNames</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
-<div class="col-second odd-row-color"><code><a href="#useTypeProperties" class="member-name-link">useTypeProperties</a></code></div>
+<div class="col-first odd-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</code></div>
+<div class="col-second odd-row-color"><code><a href="#runtimeErrorLimitLine" class="member-name-link">runtimeErrorLimitLine</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
 <div class="col-first even-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</code></div>
-<div class="col-second even-row-color"><code><a href="#variableChangesUntilSave" class="member-name-link">variableChangesUntilSave</a></code></div>
+<div class="col-second even-row-color"><code><a href="#runtimeErrorLimitLineTimeout" class="member-name-link">runtimeErrorLimitLineTimeout</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="log/Verbosity.html" title="enum class in ch.njol.skript.log">Verbosity</a>&gt;</code></div>
-<div class="col-second odd-row-color"><code><a href="#verbosity" class="member-name-link">verbosity</a></code></div>
+<div class="col-first odd-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</code></div>
+<div class="col-second odd-row-color"><code><a href="#runtimeErrorLimitTotal" class="member-name-link">runtimeErrorLimitTotal</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="#runtimeErrorTimeoutDuration" class="member-name-link">runtimeErrorTimeoutDuration</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</code></div>
+<div class="col-second odd-row-color"><code><a href="#runtimeWarningLimitLine" class="member-name-link">runtimeWarningLimitLine</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="#runtimeWarningLimitLineTimeout" class="member-name-link">runtimeWarningLimitLineTimeout</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</code></div>
+<div class="col-second odd-row-color"><code><a href="#runtimeWarningLimitTotal" class="member-name-link">runtimeWarningLimitTotal</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="#runtimeWarningTimeoutDuration" class="member-name-link">runtimeWarningTimeoutDuration</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>[]&gt;</code></div>
+<div class="col-second odd-row-color"><code><a href="#safeTags" class="member-name-link">safeTags</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="#scriptLoaderThreadSize" class="member-name-link">scriptLoaderThreadSize</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
+<div class="col-second odd-row-color"><code><a href="#simplifySyntaxesOnParse" class="member-name-link">simplifySyntaxesOnParse</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="util/Timespan.html" title="class in ch.njol.skript.util">Timespan</a>&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="#updateCheckInterval" class="member-name-link">updateCheckInterval</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
+<div class="col-second odd-row-color"><code><a href="#usePlayerUUIDsInVariableNames" class="member-name-link">usePlayerUUIDsInVariableNames</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="#useTypeProperties" class="member-name-link">useTypeProperties</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Integer.html" title="class or interface in java.lang" class="external-link">Integer</a>&gt;</code></div>
+<div class="col-second odd-row-color"><code><a href="#variableChangesUntilSave" class="member-name-link">variableChangesUntilSave</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>static final <a href="config/Option.html" title="class in ch.njol.skript.config">Option</a><wbr>&lt;<a href="log/Verbosity.html" title="enum class in ch.njol.skript.log">Verbosity</a>&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="#verbosity" class="member-name-link">verbosity</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
 </div>
 </section>
 </li>
@@ -749,6 +753,14 @@ loadScripts(document, 'script');</script>
 <h3>allowUnsafePlatforms</h3>
 <div class="horizontal-scroll">
 <div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="config/Option.html" title="class in ch.njol.skript.config">Option</a>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</span>&nbsp;<span class="element-name">allowUnsafePlatforms</span></div>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="enableLenientStringArguments">
+<h3>enableLenientStringArguments</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type"><a href="config/Option.html" title="class in ch.njol.skript.config">Option</a>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Boolean.html" title="class or interface in java.lang" class="external-link">Boolean</a>&gt;</span>&nbsp;<span class="element-name">enableLenientStringArguments</span></div>
 </div>
 </section>
 </li>
