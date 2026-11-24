@@ -154,7 +154,6 @@ loadScripts(document, 'script');</script>
 <li><a href="#exception(java.lang.Throwable,java.lang.String...)" tabindex="0">exception(Throwable, String...)</a></li>
 <li><a href="#exception(java.lang.Throwable,java.lang.Thread,java.lang.String...)" tabindex="0">exception(Throwable, Thread, String...)</a></li>
 <li><a href="#exception(java.lang.Throwable,ch.njol.skript.lang.TriggerItem,java.lang.String...)" tabindex="0">exception(Throwable, TriggerItem, String...)</a></li>
-<li><a href="#markErrored()" tabindex="0">markErrored()</a></li>
 <li><a href="#exception(java.lang.Throwable,java.lang.Thread,ch.njol.skript.lang.TriggerItem,java.lang.String...)" tabindex="0">exception(Throwable, Thread, TriggerItem, String...)</a></li>
 <li><a href="#getSkriptPrefix()" tabindex="0">getSkriptPrefix()</a></li>
 <li><a href="#info(org.bukkit.command.CommandSender,java.lang.String)" tabindex="0">info(CommandSender, String)</a></li>
@@ -575,132 +574,119 @@ errors with a specific <a href="log/ErrorQuality.html" title="enum class in ch.n
 <div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#logVeryHigh()" class="member-name-link">logVeryHigh</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#markErrored()" class="member-name-link">markErrored</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
-<div class="block">Mark that an exception has occurred at some point during runtime.</div>
-</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#message(org.bukkit.command.CommandSender,java.lang.String)" class="member-name-link">message</a><wbr>(<a href="https://jd.papermc.io/paper/26.3/org/bukkit/command/CommandSender.html" title="class or interface in org.bukkit.command" class="external-link">CommandSender</a>&nbsp;sender,
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#message(org.bukkit.command.CommandSender,java.lang.String)" class="member-name-link">message</a><wbr>(<a href="https://jd.papermc.io/paper/26.3/org/bukkit/command/CommandSender.html" title="class or interface in org.bukkit.command" class="external-link">CommandSender</a>&nbsp;sender,
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;info)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Similar to <a href="#info(org.bukkit.command.CommandSender,java.lang.String)"><code>info(CommandSender, String)</code></a> but no [Skript] prefix is added.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#methodExists(java.lang.Class,java.lang.String,java.lang.Class...)" class="member-name-link">methodExists</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;?&gt;&nbsp;c,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#methodExists(java.lang.Class,java.lang.String,java.lang.Class...)" class="member-name-link">methodExists</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;?&gt;&nbsp;c,
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;methodName,
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;?&gt;...&nbsp;parameterTypes)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Tests whether a method exists in the given class.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#methodExists(java.lang.Class,java.lang.String,java.lang.Class%5B%5D,java.lang.Class)" class="member-name-link">methodExists</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;?&gt;&nbsp;c,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#methodExists(java.lang.Class,java.lang.String,java.lang.Class%5B%5D,java.lang.Class)" class="member-name-link">methodExists</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;?&gt;&nbsp;c,
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;methodName,
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;?&gt;[]&nbsp;parameterTypes,
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;?&gt;&nbsp;returnType)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Tests whether a method exists in the given class, and whether the return type matches the expected one.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Thread.html" title="class or interface in java.lang" class="external-link">Thread</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#newThread(java.lang.Runnable,java.lang.String)" class="member-name-link">newThread</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Runnable.html" title="class or interface in java.lang" class="external-link">Runnable</a>&nbsp;r,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Thread.html" title="class or interface in java.lang" class="external-link">Thread</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#newThread(java.lang.Runnable,java.lang.String)" class="member-name-link">newThread</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Runnable.html" title="class or interface in java.lang" class="external-link">Runnable</a>&nbsp;r,
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Creates a new Thread and sets its UncaughtExceptionHandler.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#onDisable()" class="member-name-link">onDisable</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#onEnable()" class="member-name-link">onEnable</a>()</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#onDisable()" class="member-name-link">onDisable</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#onPluginDisable(org.bukkit.event.server.PluginDisableEvent)" class="member-name-link">onPluginDisable</a><wbr>(<a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/server/PluginDisableEvent.html" title="class or interface in org.bukkit.event.server" class="external-link">PluginDisableEvent</a>&nbsp;event)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#onEnable()" class="member-name-link">onEnable</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#outdatedError()" class="member-name-link">outdatedError</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#onPluginDisable(org.bukkit.event.server.PluginDisableEvent)" class="member-name-link">onPluginDisable</a><wbr>(<a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/server/PluginDisableEvent.html" title="class or interface in org.bukkit.event.server" class="external-link">PluginDisableEvent</a>&nbsp;event)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#outdatedError(java.lang.Exception)" class="member-name-link">outdatedError</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Exception.html" title="class or interface in java.lang" class="external-link">Exception</a>&nbsp;e)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#outdatedError()" class="member-name-link">outdatedError</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code>static <a href="SkriptAddon.html" title="class in ch.njol.skript">SkriptAddon</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#registerAddon(org.bukkit.plugin.java.JavaPlugin)" class="member-name-link">registerAddon</a><wbr>(<a href="https://jd.papermc.io/paper/26.3/org/bukkit/plugin/java/JavaPlugin.html" title="class or interface in org.bukkit.plugin.java" class="external-link">JavaPlugin</a>&nbsp;plugin)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#outdatedError(java.lang.Exception)" class="member-name-link">outdatedError</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Exception.html" title="class or interface in java.lang" class="external-link">Exception</a>&nbsp;e)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code>static <a href="SkriptAddon.html" title="class in ch.njol.skript">SkriptAddon</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#registerAddon(org.bukkit.plugin.java.JavaPlugin)" class="member-name-link">registerAddon</a><wbr>(<a href="https://jd.papermc.io/paper/26.3/org/bukkit/plugin/java/JavaPlugin.html" title="class or interface in org.bukkit.plugin.java" class="external-link">JavaPlugin</a>&nbsp;plugin)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6">
 <div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
 <div class="deprecation-comment">Use <a href="../../../org/skriptlang/skript/Skript.html#registerAddon(java.lang.Class,java.lang.String)"><code>Skript.registerAddon(Class, String)</code></a>.</div>
 </div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code>static &lt;E extends <a href="lang/Condition.html" title="class in ch.njol.skript.lang">Condition</a>&gt;<br>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#registerCondition(java.lang.Class,ch.njol.skript.lang.Condition.ConditionType,java.lang.String...)" class="member-name-link">registerCondition</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;E&gt;&nbsp;conditionClass,
- <a href="lang/Condition.ConditionType.html" title="enum class in ch.njol.skript.lang">Condition.ConditionType</a>&nbsp;type,
- <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>...&nbsp;patterns)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6">
-<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
-<div class="deprecation-comment">Use <a href="../../../org/skriptlang/skript/registration/SyntaxRegistry.html#register(org.skriptlang.skript.registration.SyntaxRegistry.Key,I)"><code>SyntaxRegistry.register(Key, SyntaxInfo)</code></a> with <a href="../../../org/skriptlang/skript/registration/SyntaxRegistry.html#CONDITION"><code>SyntaxRegistry.CONDITION</code></a>.</div>
-</div>
-</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code>static &lt;E extends <a href="lang/Condition.html" title="class in ch.njol.skript.lang">Condition</a>&gt;<br>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#registerCondition(java.lang.Class,java.lang.String...)" class="member-name-link">registerCondition</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;E&gt;&nbsp;conditionClass,
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#registerCondition(java.lang.Class,ch.njol.skript.lang.Condition.ConditionType,java.lang.String...)" class="member-name-link">registerCondition</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;E&gt;&nbsp;conditionClass,
+ <a href="lang/Condition.ConditionType.html" title="enum class in ch.njol.skript.lang">Condition.ConditionType</a>&nbsp;type,
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>...&nbsp;patterns)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6">
 <div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
 <div class="deprecation-comment">Use <a href="../../../org/skriptlang/skript/registration/SyntaxRegistry.html#register(org.skriptlang.skript.registration.SyntaxRegistry.Key,I)"><code>SyntaxRegistry.register(Key, SyntaxInfo)</code></a> with <a href="../../../org/skriptlang/skript/registration/SyntaxRegistry.html#CONDITION"><code>SyntaxRegistry.CONDITION</code></a>.</div>
 </div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code>static &lt;E extends <a href="lang/Effect.html" title="class in ch.njol.skript.lang">Effect</a>&gt;<br>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#registerEffect(java.lang.Class,java.lang.String...)" class="member-name-link">registerEffect</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;E&gt;&nbsp;effectClass,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code>static &lt;E extends <a href="lang/Condition.html" title="class in ch.njol.skript.lang">Condition</a>&gt;<br>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#registerCondition(java.lang.Class,java.lang.String...)" class="member-name-link">registerCondition</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;E&gt;&nbsp;conditionClass,
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>...&nbsp;patterns)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
+<div class="deprecation-comment">Use <a href="../../../org/skriptlang/skript/registration/SyntaxRegistry.html#register(org.skriptlang.skript.registration.SyntaxRegistry.Key,I)"><code>SyntaxRegistry.register(Key, SyntaxInfo)</code></a> with <a href="../../../org/skriptlang/skript/registration/SyntaxRegistry.html#CONDITION"><code>SyntaxRegistry.CONDITION</code></a>.</div>
+</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code>static &lt;E extends <a href="lang/Effect.html" title="class in ch.njol.skript.lang">Effect</a>&gt;<br>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#registerEffect(java.lang.Class,java.lang.String...)" class="member-name-link">registerEffect</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;E&gt;&nbsp;effectClass,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>...&nbsp;patterns)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6">
 <div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
 <div class="deprecation-comment">Use <a href="../../../org/skriptlang/skript/registration/SyntaxRegistry.html#register(org.skriptlang.skript.registration.SyntaxRegistry.Key,I)"><code>SyntaxRegistry.register(Key, SyntaxInfo)</code></a> with <a href="../../../org/skriptlang/skript/registration/SyntaxRegistry.html#EFFECT"><code>SyntaxRegistry.EFFECT</code></a>.</div>
 </div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code>static &lt;E extends <a href="lang/SkriptEvent.html" title="class in ch.njol.skript.lang">SkriptEvent</a>&gt;<br><a href="lang/SkriptEventInfo.html" title="class in ch.njol.skript.lang">SkriptEventInfo</a><wbr>&lt;E&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#registerEvent(java.lang.String,java.lang.Class,java.lang.Class%5B%5D,java.lang.String...)" class="member-name-link">registerEvent</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code>static &lt;E extends <a href="lang/SkriptEvent.html" title="class in ch.njol.skript.lang">SkriptEvent</a>&gt;<br><a href="lang/SkriptEventInfo.html" title="class in ch.njol.skript.lang">SkriptEventInfo</a><wbr>&lt;E&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#registerEvent(java.lang.String,java.lang.Class,java.lang.Class%5B%5D,java.lang.String...)" class="member-name-link">registerEvent</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;E&gt;&nbsp;eventClass,
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;? extends <a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/Event.html" title="class or interface in org.bukkit.event" class="external-link">Event</a>&gt;[]&nbsp;events,
- <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>...&nbsp;patterns)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6">
-<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
-<div class="deprecation-comment">Use <a href="../../../org/skriptlang/skript/registration/SyntaxRegistry.html#register(org.skriptlang.skript.registration.SyntaxRegistry.Key,I)"><code>SyntaxRegistry.register(Key, SyntaxInfo)</code></a> with <a href="../../../org/skriptlang/skript/bukkit/registration/BukkitSyntaxInfos.Event.html#KEY"><code>BukkitSyntaxInfos.Event.KEY</code></a>.</div>
-</div>
-</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code>static &lt;E extends <a href="lang/SkriptEvent.html" title="class in ch.njol.skript.lang">SkriptEvent</a>&gt;<br><a href="lang/SkriptEventInfo.html" title="class in ch.njol.skript.lang">SkriptEventInfo</a><wbr>&lt;E&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#registerEvent(java.lang.String,java.lang.Class,java.lang.Class,java.lang.String...)" class="member-name-link">registerEvent</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
- <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;E&gt;&nbsp;c,
- <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;? extends <a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/Event.html" title="class or interface in org.bukkit.event" class="external-link">Event</a>&gt;&nbsp;event,
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>...&nbsp;patterns)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6">
 <div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
 <div class="deprecation-comment">Use <a href="../../../org/skriptlang/skript/registration/SyntaxRegistry.html#register(org.skriptlang.skript.registration.SyntaxRegistry.Key,I)"><code>SyntaxRegistry.register(Key, SyntaxInfo)</code></a> with <a href="../../../org/skriptlang/skript/bukkit/registration/BukkitSyntaxInfos.Event.html#KEY"><code>BukkitSyntaxInfos.Event.KEY</code></a>.</div>
 </div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code>static &lt;E extends <a href="lang/Expression.html" title="interface in ch.njol.skript.lang">Expression</a>&lt;T&gt;, T&gt;<br>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#registerExpression(java.lang.Class,java.lang.Class,ch.njol.skript.lang.ExpressionType,java.lang.String...)" class="member-name-link">registerExpression</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;E&gt;&nbsp;expressionClass,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code>static &lt;E extends <a href="lang/SkriptEvent.html" title="class in ch.njol.skript.lang">SkriptEvent</a>&gt;<br><a href="lang/SkriptEventInfo.html" title="class in ch.njol.skript.lang">SkriptEventInfo</a><wbr>&lt;E&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#registerEvent(java.lang.String,java.lang.Class,java.lang.Class,java.lang.String...)" class="member-name-link">registerEvent</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;name,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;E&gt;&nbsp;c,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;? extends <a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/Event.html" title="class or interface in org.bukkit.event" class="external-link">Event</a>&gt;&nbsp;event,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>...&nbsp;patterns)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
+<div class="deprecation-comment">Use <a href="../../../org/skriptlang/skript/registration/SyntaxRegistry.html#register(org.skriptlang.skript.registration.SyntaxRegistry.Key,I)"><code>SyntaxRegistry.register(Key, SyntaxInfo)</code></a> with <a href="../../../org/skriptlang/skript/bukkit/registration/BukkitSyntaxInfos.Event.html#KEY"><code>BukkitSyntaxInfos.Event.KEY</code></a>.</div>
+</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code>static &lt;E extends <a href="lang/Expression.html" title="interface in ch.njol.skript.lang">Expression</a>&lt;T&gt;, T&gt;<br>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#registerExpression(java.lang.Class,java.lang.Class,ch.njol.skript.lang.ExpressionType,java.lang.String...)" class="member-name-link">registerExpression</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;E&gt;&nbsp;expressionClass,
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;T&gt;&nbsp;returnType,
  <a href="lang/ExpressionType.html" title="enum class in ch.njol.skript.lang">ExpressionType</a>&nbsp;type,
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>...&nbsp;patterns)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6">
 <div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
 <div class="deprecation-comment">Use <a href="../../../org/skriptlang/skript/registration/SyntaxRegistry.html#register(org.skriptlang.skript.registration.SyntaxRegistry.Key,I)"><code>SyntaxRegistry.register(Key, SyntaxInfo)</code></a> with <a href="../../../org/skriptlang/skript/registration/SyntaxRegistry.html#EXPRESSION"><code>SyntaxRegistry.EXPRESSION</code></a>.</div>
 </div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code>static &lt;E extends <a href="lang/Section.html" title="class in ch.njol.skript.lang">Section</a>&gt;<br>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#registerSection(java.lang.Class,java.lang.String...)" class="member-name-link">registerSection</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;E&gt;&nbsp;sectionClass,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code>static &lt;E extends <a href="lang/Section.html" title="class in ch.njol.skript.lang">Section</a>&gt;<br>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#registerSection(java.lang.Class,java.lang.String...)" class="member-name-link">registerSection</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;E&gt;&nbsp;sectionClass,
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>...&nbsp;patterns)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6">
 <div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
 <div class="deprecation-comment">Use <a href="../../../org/skriptlang/skript/registration/SyntaxRegistry.html#register(org.skriptlang.skript.registration.SyntaxRegistry.Key,I)"><code>SyntaxRegistry.register(Key, SyntaxInfo)</code></a> with <a href="../../../org/skriptlang/skript/registration/SyntaxRegistry.html#SECTION"><code>SyntaxRegistry.SECTION</code></a>.</div>
 </div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code>static &lt;E extends <a href="../../../org/skriptlang/skript/lang/structure/Structure.html" title="class in org.skriptlang.skript.lang.structure">Structure</a>&gt;<br>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#registerSimpleStructure(java.lang.Class,java.lang.String...)" class="member-name-link">registerSimpleStructure</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;E&gt;&nbsp;structureClass,
- <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>...&nbsp;patterns)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6">
-<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
-<div class="deprecation-comment">Use <a href="../../../org/skriptlang/skript/registration/SyntaxRegistry.html#register(org.skriptlang.skript.registration.SyntaxRegistry.Key,I)"><code>SyntaxRegistry.register(Key, SyntaxInfo)</code></a> with <a href="../../../org/skriptlang/skript/registration/SyntaxRegistry.html#STRUCTURE"><code>SyntaxRegistry.STRUCTURE</code></a>.</div>
-</div>
-</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code>static &lt;E extends <a href="../../../org/skriptlang/skript/lang/structure/Structure.html" title="class in org.skriptlang.skript.lang.structure">Structure</a>&gt;<br>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#registerStructure(java.lang.Class,java.lang.String...)" class="member-name-link">registerStructure</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;E&gt;&nbsp;structureClass,
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#registerSimpleStructure(java.lang.Class,java.lang.String...)" class="member-name-link">registerSimpleStructure</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;E&gt;&nbsp;structureClass,
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>...&nbsp;patterns)</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6">
 <div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
@@ -708,8 +694,7 @@ errors with a specific <a href="log/ErrorQuality.html" title="enum class in ch.n
 </div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code>static &lt;E extends <a href="../../../org/skriptlang/skript/lang/structure/Structure.html" title="class in org.skriptlang.skript.lang.structure">Structure</a>&gt;<br>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#registerStructure(java.lang.Class,org.skriptlang.skript.lang.entry.EntryValidator,java.lang.String...)" class="member-name-link">registerStructure</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;E&gt;&nbsp;structureClass,
- <a href="../../../org/skriptlang/skript/lang/entry/EntryValidator.html" title="class in org.skriptlang.skript.lang.entry">EntryValidator</a>&nbsp;entryValidator,
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#registerStructure(java.lang.Class,java.lang.String...)" class="member-name-link">registerStructure</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;E&gt;&nbsp;structureClass,
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>...&nbsp;patterns)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6">
 <div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
@@ -717,30 +702,39 @@ errors with a specific <a href="log/ErrorQuality.html" title="enum class in ch.n
 </div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code>static &lt;E extends <a href="../../../org/skriptlang/skript/lang/structure/Structure.html" title="class in org.skriptlang.skript.lang.structure">Structure</a>&gt;<br>void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#registerStructure(java.lang.Class,org.skriptlang.skript.lang.entry.EntryValidator,org.skriptlang.skript.registration.DefaultSyntaxInfos.Structure.NodeType,java.lang.String...)" class="member-name-link">registerStructure</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;E&gt;&nbsp;structureClass,
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#registerStructure(java.lang.Class,org.skriptlang.skript.lang.entry.EntryValidator,java.lang.String...)" class="member-name-link">registerStructure</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;E&gt;&nbsp;structureClass,
+ <a href="../../../org/skriptlang/skript/lang/entry/EntryValidator.html" title="class in org.skriptlang.skript.lang.entry">EntryValidator</a>&nbsp;entryValidator,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>...&nbsp;patterns)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
+<div class="deprecation-comment">Use <a href="../../../org/skriptlang/skript/registration/SyntaxRegistry.html#register(org.skriptlang.skript.registration.SyntaxRegistry.Key,I)"><code>SyntaxRegistry.register(Key, SyntaxInfo)</code></a> with <a href="../../../org/skriptlang/skript/registration/SyntaxRegistry.html#STRUCTURE"><code>SyntaxRegistry.STRUCTURE</code></a>.</div>
+</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code>static &lt;E extends <a href="../../../org/skriptlang/skript/lang/structure/Structure.html" title="class in org.skriptlang.skript.lang.structure">Structure</a>&gt;<br>void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6"><code><a href="#registerStructure(java.lang.Class,org.skriptlang.skript.lang.entry.EntryValidator,org.skriptlang.skript.registration.DefaultSyntaxInfos.Structure.NodeType,java.lang.String...)" class="member-name-link">registerStructure</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;E&gt;&nbsp;structureClass,
  <a href="../../../org/skriptlang/skript/lang/entry/EntryValidator.html" title="class in org.skriptlang.skript.lang.entry">EntryValidator</a>&nbsp;entryValidator,
  <a href="../../../org/skriptlang/skript/registration/DefaultSyntaxInfos.Structure.NodeType.html" title="enum class in org.skriptlang.skript.registration">DefaultSyntaxInfos.Structure.NodeType</a>&nbsp;nodeType,
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>...&nbsp;patterns)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6">
 <div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span>
 <div class="deprecation-comment">Use <a href="../../../org/skriptlang/skript/registration/SyntaxRegistry.html#register(org.skriptlang.skript.registration.SyntaxRegistry.Key,I)"><code>SyntaxRegistry.register(Key, SyntaxInfo)</code></a> with <a href="../../../org/skriptlang/skript/registration/SyntaxRegistry.html#STRUCTURE"><code>SyntaxRegistry.STRUCTURE</code></a>.</div>
 </div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#testing()" class="member-name-link">testing</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#toString(double)" class="member-name-link">toString</a><wbr>(double&nbsp;n)</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#testing()" class="member-name-link">testing</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#updateMinecraftVersion()" class="member-name-link">updateMinecraftVersion</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#toString(double)" class="member-name-link">toString</a><wbr>(double&nbsp;n)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#updateMinecraftVersion()" class="member-name-link">updateMinecraftVersion</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
 <div class="block">Check minecraft version and assign it to minecraftVersion field
 This method is created to update MC version before onEnable method</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#warning(java.lang.String)" class="member-name-link">warning</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;warning)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#warning(java.lang.String)" class="member-name-link">warning</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;warning)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
 </div>
 </div>
 </div>
@@ -2030,16 +2024,6 @@ errors with a specific <a href="log/ErrorQuality.html" title="enum class in ch.n
  <a href="https://www.javadocs.dev/org.jetbrains/annotations/26.0.2/org/jetbrains/annotations/Nullable.html" title="class or interface in org.jetbrains.annotations" class="external-link">@Nullable</a>
  <a href="https://www.javadocs.dev/org.jetbrains/annotations/26.0.2/org/jetbrains/annotations/Nullable.html" title="class or interface in org.jetbrains.annotations" class="external-link">@Nullable</a> <a href="lang/TriggerItem.html" title="class in ch.njol.skript.lang">TriggerItem</a>&nbsp;item,
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>...&nbsp;info)</span></div>
-</div>
-</section>
-</li>
-<li>
-<section class="detail" id="markErrored()">
-<h3>markErrored</h3>
-<div class="horizontal-scroll">
-<div class="member-signature"><span class="modifiers">public static</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">markErrored</span>()</div>
-<div class="block">Mark that an exception has occurred at some point during runtime.
-Only used for Skript's testing system.</div>
 </div>
 </section>
 </li>
