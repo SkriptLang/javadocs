@@ -60,6 +60,7 @@ loadScripts(document, 'script');</script>
 <ol class="toc-list">
 <li><a href="#builder(java.lang.Class,java.lang.Class)" tabindex="0">builder(Class, Class)</a></li>
 <li><a href="#simple(java.lang.Class,java.lang.Class,org.skriptlang.skript.lang.converter.Converter)" tabindex="0">simple(Class, Class, Converter)</a></li>
+<li><a href="#simple(java.lang.Class,java.lang.Class,org.skriptlang.skript.lang.converter.Converter,java.lang.String)" tabindex="0">simple(Class, Class, Converter, String)</a></li>
 <li><a href="#eventClass()" tabindex="0">eventClass()</a></li>
 <li><a href="#valueClass()" tabindex="0">valueClass()</a></li>
 <li><a href="#patterns()" tabindex="0">patterns()</a></li>
@@ -79,6 +80,7 @@ loadScripts(document, 'script');</script>
 <li><a href="#getConverted(java.lang.Class,java.lang.Class)" tabindex="0">getConverted(Class, Class)</a></li>
 <li><a href="#getConverted(java.lang.Class,java.lang.Class,org.skriptlang.skript.lang.converter.Converter)" tabindex="0">getConverted(Class, Class, Converter)</a></li>
 <li><a href="#getConverted(java.lang.Class,java.lang.Class,org.skriptlang.skript.lang.converter.Converter,org.skriptlang.skript.lang.converter.Converter)" tabindex="0">getConverted(Class, Class, Converter, Converter)</a></li>
+<li><a href="#description()" tabindex="0">description()</a></li>
 <li><a href="#write(org.skriptlang.skript.docs.DocumentationAdapter)" tabindex="0">write(DocumentationAdapter)</a></li>
 </ol>
 </li>
@@ -177,90 +179,101 @@ Instances should be created using <a href="#builder(java.lang.Class,java.lang.Cl
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">The converter used to obtain the value from the event.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a><wbr>&lt;<a href="#type-param-E" title="type parameter in EventValue">E</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#eventClass()" class="member-name-link">eventClass</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#description()" class="member-name-link">description</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a><wbr>&lt;<a href="#type-param-E" title="type parameter in EventValue">E</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#eventClass()" class="member-name-link">eventClass</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">The event class this value applies to.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://www.javadocs.dev/org.jetbrains/annotations/26.0.2/org/jetbrains/annotations/Nullable.html" title="class or interface in org.jetbrains.annotations" class="external-link">@Nullable</a> <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#excludedErrorMessage()" class="member-name-link">excludedErrorMessage</a>()</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://www.javadocs.dev/org.jetbrains/annotations/26.0.2/org/jetbrains/annotations/Nullable.html" title="class or interface in org.jetbrains.annotations" class="external-link">@Nullable</a> <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#excludedErrorMessage()" class="member-name-link">excludedErrorMessage</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">An optional error message shown when this value is excluded for a matching event.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://www.javadocs.dev/org.jetbrains/annotations/26.0.2/org/jetbrains/annotations/Unmodifiable.html" title="class or interface in org.jetbrains.annotations" class="external-link">@Unmodifiable</a> <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;? extends <a href="#type-param-E" title="type parameter in EventValue">E</a>&gt;&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#excludedEvents()" class="member-name-link">excludedEvents</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://www.javadocs.dev/org.jetbrains/annotations/26.0.2/org/jetbrains/annotations/Unmodifiable.html" title="class or interface in org.jetbrains.annotations" class="external-link">@Unmodifiable</a> <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collection.html" title="class or interface in java.util" class="external-link">Collection</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;? extends <a href="#type-param-E" title="type parameter in EventValue">E</a>&gt;&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#excludedEvents()" class="member-name-link">excludedEvents</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Event types explicitly excluded from using this event value.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#type-param-V" title="type parameter in EventValue">V</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#get(E)" class="member-name-link">get</a><wbr>(<a href="#type-param-E" title="type parameter in EventValue">E</a>&nbsp;event)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#type-param-V" title="type parameter in EventValue">V</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#get(E)" class="member-name-link">get</a><wbr>(<a href="#type-param-E" title="type parameter in EventValue">E</a>&nbsp;event)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Obtains the value from the given event instance.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;ConvertedEvent extends <a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/Event.html" title="class or interface in org.bukkit.event" class="external-link">Event</a>, ConvertedValue&gt;<br><a href="https://www.javadocs.dev/org.jetbrains/annotations/26.0.2/org/jetbrains/annotations/Nullable.html" title="class or interface in org.jetbrains.annotations" class="external-link">@Nullable</a> <a href="EventValue.html" title="interface in org.skriptlang.skript.bukkit.lang.eventvalue">EventValue</a><wbr>&lt;ConvertedEvent, ConvertedValue&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getConverted(java.lang.Class,java.lang.Class)" class="member-name-link">getConverted</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;ConvertedEvent&gt;&nbsp;newEventClass,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;ConvertedEvent extends <a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/Event.html" title="class or interface in org.bukkit.event" class="external-link">Event</a>, ConvertedValue&gt;<br><a href="https://www.javadocs.dev/org.jetbrains/annotations/26.0.2/org/jetbrains/annotations/Nullable.html" title="class or interface in org.jetbrains.annotations" class="external-link">@Nullable</a> <a href="EventValue.html" title="interface in org.skriptlang.skript.bukkit.lang.eventvalue">EventValue</a><wbr>&lt;ConvertedEvent, ConvertedValue&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getConverted(java.lang.Class,java.lang.Class)" class="member-name-link">getConverted</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;ConvertedEvent&gt;&nbsp;newEventClass,
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;ConvertedValue&gt;&nbsp;newValueClass)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Returns a new event value that converts this value to a different value class,
 or uses a different event class.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default &lt;NewEvent extends <a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/Event.html" title="class or interface in org.bukkit.event" class="external-link">Event</a>, NewValue&gt;<br><a href="https://www.javadocs.dev/org.jetbrains/annotations/26.0.2/org/jetbrains/annotations/Nullable.html" title="class or interface in org.jetbrains.annotations" class="external-link">@Nullable</a> <a href="EventValue.html" title="interface in org.skriptlang.skript.bukkit.lang.eventvalue">EventValue</a><wbr>&lt;NewEvent,<wbr>NewValue&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#getConverted(java.lang.Class,java.lang.Class,org.skriptlang.skript.lang.converter.Converter)" class="member-name-link">getConverted</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;NewEvent&gt;&nbsp;newEventClass,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default &lt;NewEvent extends <a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/Event.html" title="class or interface in org.bukkit.event" class="external-link">Event</a>, NewValue&gt;<br><a href="https://www.javadocs.dev/org.jetbrains/annotations/26.0.2/org/jetbrains/annotations/Nullable.html" title="class or interface in org.jetbrains.annotations" class="external-link">@Nullable</a> <a href="EventValue.html" title="interface in org.skriptlang.skript.bukkit.lang.eventvalue">EventValue</a><wbr>&lt;NewEvent,<wbr>NewValue&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#getConverted(java.lang.Class,java.lang.Class,org.skriptlang.skript.lang.converter.Converter)" class="member-name-link">getConverted</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;NewEvent&gt;&nbsp;newEventClass,
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;NewValue&gt;&nbsp;newValueClass,
  <a href="../../../lang/converter/Converter.html" title="interface in org.skriptlang.skript.lang.converter">Converter</a>&lt;<a href="#type-param-V" title="type parameter in EventValue">V</a>,<wbr>NewValue&gt;&nbsp;converter)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Returns a new event value that converts this value to a different value class
 using the provided converter.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;NewEvent extends <a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/Event.html" title="class or interface in org.bukkit.event" class="external-link">Event</a>, NewValue&gt;<br><a href="EventValue.html" title="interface in org.skriptlang.skript.bukkit.lang.eventvalue">EventValue</a><wbr>&lt;NewEvent,<wbr>NewValue&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getConverted(java.lang.Class,java.lang.Class,org.skriptlang.skript.lang.converter.Converter,org.skriptlang.skript.lang.converter.Converter)" class="member-name-link">getConverted</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;NewEvent&gt;&nbsp;newEventClass,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>&lt;NewEvent extends <a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/Event.html" title="class or interface in org.bukkit.event" class="external-link">Event</a>, NewValue&gt;<br><a href="EventValue.html" title="interface in org.skriptlang.skript.bukkit.lang.eventvalue">EventValue</a><wbr>&lt;NewEvent,<wbr>NewValue&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getConverted(java.lang.Class,java.lang.Class,org.skriptlang.skript.lang.converter.Converter,org.skriptlang.skript.lang.converter.Converter)" class="member-name-link">getConverted</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;NewEvent&gt;&nbsp;newEventClass,
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;NewValue&gt;&nbsp;newValueClass,
  <a href="../../../lang/converter/Converter.html" title="interface in org.skriptlang.skript.lang.converter">Converter</a>&lt;<a href="#type-param-V" title="type parameter in EventValue">V</a>,<wbr>NewValue&gt;&nbsp;converter,
  <a href="https://www.javadocs.dev/org.jetbrains/annotations/26.0.2/org/jetbrains/annotations/Nullable.html" title="class or interface in org.jetbrains.annotations" class="external-link">@Nullable</a> <a href="../../../lang/converter/Converter.html" title="interface in org.skriptlang.skript.lang.converter">Converter</a>&lt;NewValue,<wbr><a href="#type-param-V" title="type parameter in EventValue">V</a>&gt;&nbsp;reverseConverter)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Returns a new event value that converts this value to a different value class
 using the provided converter and reverse converter.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#hasChanger(ch.njol.skript.classes.Changer.ChangeMode)" class="member-name-link">hasChanger</a><wbr>(<a href="../../../../../../ch/njol/skript/classes/Changer.ChangeMode.html" title="enum class in ch.njol.skript.classes">Changer.ChangeMode</a>&nbsp;mode)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#hasChanger(ch.njol.skript.classes.Changer.ChangeMode)" class="member-name-link">hasChanger</a><wbr>(<a href="../../../../../../ch/njol/skript/classes/Changer.ChangeMode.html" title="enum class in ch.njol.skript.classes">Changer.ChangeMode</a>&nbsp;mode)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Checks whether a changer is supported for the specified <a href="../../../../../../ch/njol/skript/classes/Changer.ChangeMode.html" title="enum class in ch.njol.skript.classes"><code>Changer.ChangeMode</code></a>.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#matches(java.lang.Class,java.lang.Class)" class="member-name-link">matches</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;? extends <a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/Event.html" title="class or interface in org.bukkit.event" class="external-link">Event</a>&gt;&nbsp;eventClass,
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#matches(java.lang.Class,java.lang.Class)" class="member-name-link">matches</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;? extends <a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/Event.html" title="class or interface in org.bukkit.event" class="external-link">Event</a>&gt;&nbsp;eventClass,
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;?&gt;&nbsp;valueClass)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Checks whether this event value matches the provided event class and value class.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#matches(java.lang.Class,java.lang.Class,java.util.SequencedCollection)" class="member-name-link">matches</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;? extends <a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/Event.html" title="class or interface in org.bukkit.event" class="external-link">Event</a>&gt;&nbsp;eventClass,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code>default boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5"><code><a href="#matches(java.lang.Class,java.lang.Class,java.util.SequencedCollection)" class="member-name-link">matches</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;? extends <a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/Event.html" title="class or interface in org.bukkit.event" class="external-link">Event</a>&gt;&nbsp;eventClass,
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;?&gt;&nbsp;valueClass,
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/SequencedCollection.html" title="class or interface in java.util" class="external-link">SequencedCollection</a>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;&nbsp;patterns)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab5">
 <div class="block">Checks whether this event value matches the provided event class, value class,
 and identifier patterns.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#matches(org.skriptlang.skript.bukkit.lang.eventvalue.EventValue)" class="member-name-link">matches</a><wbr>(<a href="EventValue.html" title="interface in org.skriptlang.skript.bukkit.lang.eventvalue">EventValue</a>&lt;?,<wbr>?&gt;&nbsp;eventValue)</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#matches(org.skriptlang.skript.bukkit.lang.eventvalue.EventValue)" class="member-name-link">matches</a><wbr>(<a href="EventValue.html" title="interface in org.skriptlang.skript.bukkit.lang.eventvalue">EventValue</a>&lt;?,<wbr>?&gt;&nbsp;eventValue)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Checks whether this event value matches the provided event value in terms of
 event class, value class, and identifier patterns.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#matchesInput(java.lang.String)" class="member-name-link">matchesInput</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;input)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#matchesInput(java.lang.String)" class="member-name-link">matchesInput</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;input)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Checks whether the provided input matches one of <a href="#patterns()"><code>patterns()</code></a> and
 satisfies any additional input validation.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://www.javadocs.dev/org.jetbrains/annotations/26.0.2/org/jetbrains/annotations/Unmodifiable.html" title="class or interface in org.jetbrains.annotations" class="external-link">@Unmodifiable</a> <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/SequencedCollection.html" title="class or interface in java.util" class="external-link">SequencedCollection</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#patterns()" class="member-name-link">patterns</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://www.javadocs.dev/org.jetbrains/annotations/26.0.2/org/jetbrains/annotations/Unmodifiable.html" title="class or interface in org.jetbrains.annotations" class="external-link">@Unmodifiable</a> <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/SequencedCollection.html" title="class or interface in java.util" class="external-link">SequencedCollection</a><wbr>&lt;<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#patterns()" class="member-name-link">patterns</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Patterns used to identify this event value from user input.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab1"><code>static &lt;E extends <a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/Event.html" title="class or interface in org.bukkit.event" class="external-link">Event</a>, V&gt;<br><a href="EventValue.html" title="interface in org.skriptlang.skript.bukkit.lang.eventvalue">EventValue</a><wbr>&lt;E,<wbr>V&gt;</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab1"><code><a href="#simple(java.lang.Class,java.lang.Class,org.skriptlang.skript.lang.converter.Converter)" class="member-name-link">simple</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;E&gt;&nbsp;eventClass,
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1"><code>static &lt;E extends <a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/Event.html" title="class or interface in org.bukkit.event" class="external-link">Event</a>, V&gt;<br><a href="EventValue.html" title="interface in org.skriptlang.skript.bukkit.lang.eventvalue">EventValue</a><wbr>&lt;E,<wbr>V&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1"><code><a href="#simple(java.lang.Class,java.lang.Class,org.skriptlang.skript.lang.converter.Converter)" class="member-name-link">simple</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;E&gt;&nbsp;eventClass,
  <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;V&gt;&nbsp;valueClass,
  <a href="../../../lang/converter/Converter.html" title="interface in org.skriptlang.skript.lang.converter">Converter</a>&lt;E,<wbr>V&gt;&nbsp;converter)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1">
+<div class="block">Creates a new <a href="EventValue.html" title="interface in org.skriptlang.skript.bukkit.lang.eventvalue"><code>EventValue</code></a> using a getter</div>
+</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1"><code>static &lt;E extends <a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/Event.html" title="class or interface in org.bukkit.event" class="external-link">Event</a>, V&gt;<br><a href="EventValue.html" title="interface in org.skriptlang.skript.bukkit.lang.eventvalue">EventValue</a><wbr>&lt;E,<wbr>V&gt;</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1"><code><a href="#simple(java.lang.Class,java.lang.Class,org.skriptlang.skript.lang.converter.Converter,java.lang.String)" class="member-name-link">simple</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;E&gt;&nbsp;eventClass,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;V&gt;&nbsp;valueClass,
+ <a href="../../../lang/converter/Converter.html" title="interface in org.skriptlang.skript.lang.converter">Converter</a>&lt;E,<wbr>V&gt;&nbsp;converter,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;description)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1">
 <div class="block">Creates a new <a href="EventValue.html" title="interface in org.skriptlang.skript.bukkit.lang.eventvalue"><code>EventValue</code></a> using a getter</div>
 </div>
@@ -337,6 +350,33 @@ satisfies any additional input validation.</div>
 <dd><code>eventClass</code> - the event type this value applied to</dd>
 <dd><code>valueClass</code> - the value type to produce</dd>
 <dd><code>converter</code> - the getter</dd>
+<dt>Returns:</dt>
+<dd>the constructed event value</dd>
+<dt>See Also:</dt>
+<dd>
+<ul class="tag-list-long">
+<li><a href="#builder(java.lang.Class,java.lang.Class)"><code>builder(Class, Class)</code></a></li>
+</ul>
+</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="simple(java.lang.Class,java.lang.Class,org.skriptlang.skript.lang.converter.Converter,java.lang.String)">
+<h3>simple</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="modifiers">static</span>&nbsp;<span class="type-parameters">&lt;E extends <a href="https://jd.papermc.io/paper/26.3/org/bukkit/event/Event.html" title="class or interface in org.bukkit.event" class="external-link">Event</a>, V&gt;</span>&nbsp;<span class="return-type"><a href="EventValue.html" title="interface in org.skriptlang.skript.bukkit.lang.eventvalue">EventValue</a>&lt;E,<wbr>V&gt;</span>&nbsp;<span class="element-name">simple</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;E&gt;&nbsp;eventClass,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/Class.html" title="class or interface in java.lang" class="external-link">Class</a>&lt;V&gt;&nbsp;valueClass,
+ <a href="../../../lang/converter/Converter.html" title="interface in org.skriptlang.skript.lang.converter">Converter</a>&lt;E,<wbr>V&gt;&nbsp;converter,
+ <a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;description)</span></div>
+<div class="block">Creates a new <a href="EventValue.html" title="interface in org.skriptlang.skript.bukkit.lang.eventvalue"><code>EventValue</code></a> using a getter</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>eventClass</code> - the event type this value applied to</dd>
+<dd><code>valueClass</code> - the value type to produce</dd>
+<dd><code>converter</code> - the getter</dd>
+<dd><code>description</code> - string describing this event value</dd>
 <dt>Returns:</dt>
 <dd>the constructed event value</dd>
 <dt>See Also:</dt>
@@ -682,6 +722,18 @@ using the provided converter and reverse converter.</div>
 <dd><code>reverseConverter</code> - the reverse converter to use for changing the value, if available</dd>
 <dt>Returns:</dt>
 <dd>a new converted event value</dd>
+</dl>
+</div>
+</section>
+</li>
+<li>
+<section class="detail" id="description()">
+<h3>description</h3>
+<div class="horizontal-scroll">
+<div class="member-signature"><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">description</span>()</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>A description for this event value.</dd>
 </dl>
 </div>
 </section>
